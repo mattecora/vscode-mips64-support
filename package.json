@@ -1,0 +1,32 @@
+{
+    "name": "mips64",
+    "displayName": "vscode-mips64-support",
+    "description": "MIPS64 syntax highlighting and snippets for VS Code",
+    "version": "0.0.1",
+    "publisher": "mattecora",
+    "categories": [
+        "Programming Languages"
+    ],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "mips64",
+            "aliases": ["MIPS64 Assembler", "mips64"],
+            "extensions": [".s",".asm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mips64",
+            "scopeName": "source.mips",
+            "path": "./syntaxes/mips64.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "mips64",
+                "path": "./snippets/mips64-snippets.json"
+            }
+        ]
+    }
+}
