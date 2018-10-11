@@ -19,12 +19,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(l.d|s.d|halt|beqz|bnez|dmul|dmulu|daddui)\b</string>
-			<key>name</key>
-			<string>support.function.winmips64-pseudo</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>(?i)\.(ascii|asciiz|byte|data|double|float|half|kdata|ktext|space|text|word|word32|word16|set\s*(noat|at))\b</string>
 			<key>name</key>
 			<string>storage.type.mips</string>

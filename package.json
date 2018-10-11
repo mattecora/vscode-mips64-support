@@ -2,7 +2,7 @@
     "name": "mips64",
     "displayName": "vscode-mips64-support",
     "description": "MIPS64 syntax highlighting and snippets for VS Code",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "mattecora",
     "categories": [
         "Programming Languages"
@@ -16,17 +16,27 @@
             "aliases": ["MIPS64 Assembler", "mips64"],
             "extensions": [".s",".asm"],
             "configuration": "./language-configuration.json"
+        }, {
+            "id": "winmips64",
+            "aliases": ["WinMIPS64 Assembler", "mips64"],
+            "extensions": [".s",".asm"],
+            "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "mips64",
             "scopeName": "source.mips",
             "path": "./syntaxes/mips64.tmLanguage"
+        }, {
+            "language": "winmips64",
+            "scopeName": "source.winmips64",
+            "path": "./syntaxes/winmips64.tmLanguage"
         }],
-        "snippets": [
-            {
-                "language": "mips64",
-                "path": "./snippets/mips64-snippets.json"
-            }
-        ]
+        "snippets": [{
+            "language": "mips64",
+            "path": "./snippets/mips64-snippets.json"
+        }, {
+            "language": "winmips64",
+            "path": "./snippets/winmips64-snippets.json"
+        }]
     }
 }

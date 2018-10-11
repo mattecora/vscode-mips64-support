@@ -1558,53 +1558,5 @@
     "body":"trunc.l.s\t$fd, $fs",
     "description":"MIPS64 trunc.l.s instruction",
     "scope":"source.mips"
-  },
-  "l.d":{
-    "prefix":"l.d",
-    "body":"l.d\t$fd, $addr",
-    "description":"WinMIPS64 l.d pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "s.d":{
-    "prefix":"s.d",
-    "body":"s.d\t$fd, $addr",
-    "description":"WinMIPS64 s.d pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "halt":{
-    "prefix":"halt",
-    "body":"halt",
-    "description":"WinMIPS64 halt pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "beqz":{
-    "prefix":"beqz",
-    "body":"beqz\t$rs, $off",
-    "description":"WinMIPS64 beqz pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "bnez":{
-    "prefix":"bnez",
-    "body":"bnez\t$rs, $off",
-    "description":"WinMIPS64 bnez pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "daddui":{
-    "prefix":"daddui",
-    "body":"daddui\t$rt, $rs, $val",
-    "description":"WinMIPS64 daddui pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "dmul":{
-    "prefix":"dmul",
-    "body":"dmul\t$rd, $rs, $rt",
-    "description":"WinMIPS64 dmul pseudo-instruction",
-    "scope":"source.mips"
-  },
-  "dmulu":{
-    "prefix":"dmulu",
-    "body":"dmulu\t$rd, $rs, $rt",
-    "description":"WinMIPS64 dmulu pseudo-instruction",
-    "scope":"source.mips"
   }
 }

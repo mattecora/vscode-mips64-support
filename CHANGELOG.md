@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.0.3
+Added support for WinMIPS64 dialect
+
 ## Version 0.0.2
 Added support for WinMIPS64 syntaxes on add/sub with unsigned immediates
 
