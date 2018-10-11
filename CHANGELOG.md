@@ -1,5 +1,11 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.0.4
+Added support for tasks:
+
+- Syntax check with `asm.exe`
+- Run with `winmips64.exe`
+
 ## Version 0.0.3
 Added support for WinMIPS64 dialect
 

@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with asm",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}\\.vscode\\asm-runner.py",
+                "${config:winmips64.path}",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run with winmips64",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}\\.vscode\\winmips64-runner.py",
+                "${config:winmips64.path}",
+                "${file}"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
