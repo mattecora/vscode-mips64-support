@@ -19,7 +19,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(l.d|s.d|halt|beqz|bnez|dmul|dmulu)\b</string>
+			<string>(?i)\b(l.d|s.d|halt|beqz|bnez|dmul|dmulu|daddui)\b</string>
 			<key>name</key>
 			<string>support.function.winmips64-pseudo</string>
 		</dict>

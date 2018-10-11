@@ -1589,6 +1589,12 @@
     "description":"WinMIPS64 bnez pseudo-instruction",
     "scope":"source.mips"
   },
+  "daddui":{
+    "prefix":"daddui",
+    "body":"daddui\t$rt, $rs, $val",
+    "description":"WinMIPS64 daddui pseudo-instruction",
+    "scope":"source.mips"
+  },
   "dmul":{
     "prefix":"dmul",
     "body":"dmul\t$rd, $rs, $rt",

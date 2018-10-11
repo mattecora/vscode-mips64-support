@@ -2,7 +2,7 @@
     "name": "mips64",
     "displayName": "vscode-mips64-support",
     "description": "MIPS64 syntax highlighting and snippets for VS Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "mattecora",
     "categories": [
         "Programming Languages"
