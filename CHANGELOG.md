@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.0.5
+Tasks in batch (no need for Python anymore)
+
 ## Version 0.0.4
 Added support for tasks:
 

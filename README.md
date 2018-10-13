@@ -35,7 +35,6 @@ Starting from v0.0.4, it is also possible to run directly `asm.exe` and `winmips
 
 In order to have working tasks, you have to:
 
-- Have a Python interpreter installed (since task runners are Python-based)
 - Move the `.vscode` folder into your workspace directory
 - Edit the `winmips64.path` in `settings.json` to match your folder structure
 

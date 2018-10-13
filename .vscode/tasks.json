@@ -4,9 +4,8 @@
         {
             "label": "Build with asm",
             "type": "shell",
-            "command": "python",
+            "command": "${workspaceFolder}\\.vscode\\asm-runner.bat",
             "args": [
-                "${workspaceFolder}\\.vscode\\asm-runner.py",
                 "${config:winmips64.path}",
                 "${file}"
             ],
@@ -19,9 +18,8 @@
         {
             "label": "Run with winmips64",
             "type": "shell",
-            "command": "python",
+            "command": "${workspaceFolder}\\.vscode\\winmips64-runner.bat",
             "args": [
-                "${workspaceFolder}\\.vscode\\winmips64-runner.py",
                 "${config:winmips64.path}",
                 "${file}"
             ],
