@@ -1,1562 +1,398 @@
 {
-  "abs.d":{
-    "prefix":"abs.d",
-    "body":"abs.d\t$fd, $fs",
-    "description":"MIPS64 abs.d instruction",
-    "scope":"source.mips"
-  },
-  "abs.s":{
-    "prefix":"abs.s",
-    "body":"abs.s\t$fd, $fs",
-    "description":"MIPS64 abs.s instruction",
-    "scope":"source.mips"
-  },
-  "add":{
-    "prefix":"add",
-    "body":"add\t$rd, $rs, $rt",
-    "description":"MIPS64 add instruction",
-    "scope":"source.mips"
-  },
-  "add.d":{
-    "prefix":"add.d",
-    "body":"add.d\t$fd, $fs, $ft",
-    "description":"MIPS64 add.d instruction",
-    "scope":"source.mips"
-  },
-  "add.s":{
-    "prefix":"add.s",
-    "body":"add.s\t$fd, $fs, $ft",
-    "description":"MIPS64 add.s instruction",
-    "scope":"source.mips"
-  },
-  "addi":{
-    "prefix":"addi",
-    "body":"addi\t$rt, $rs, $val",
-    "description":"MIPS64 addi instruction",
-    "scope":"source.mips"
-  },
-  "addiu":{
-    "prefix":"addiu",
-    "body":"addiu\t$rt, $rs, $val",
-    "description":"MIPS64 addiu instruction",
-    "scope":"source.mips"
-  },
-  "addu":{
-    "prefix":"addu",
-    "body":"addu\t$rd, $rs, $rt",
-    "description":"MIPS64 addu instruction",
-    "scope":"source.mips"
-  },
-  "and":{
-    "prefix":"and",
-    "body":"and\t$rd, $rs, $rt",
-    "description":"MIPS64 and instruction",
-    "scope":"source.mips"
-  },
-  "andi":{
-    "prefix":"andi",
-    "body":"andi\t$rt, $rs, $val",
-    "description":"MIPS64 andi instruction",
-    "scope":"source.mips"
-  },
-  "b":{
-    "prefix":"b",
-    "body":"b\t$off",
-    "description":"MIPS64 b instruction",
-    "scope":"source.mips"
-  },
-  "bal":{
-    "prefix":"bal",
-    "body":"bal\t$rs, $off",
-    "description":"MIPS64 bal instruction",
-    "scope":"source.mips"
-  },
-  "bc1f":{
-    "prefix":"bc1f",
-    "body":"bc1f\t$cc, $off",
-    "description":"MIPS64 bc1f instruction",
-    "scope":"source.mips"
-  },
-  "bc1fl":{
-    "prefix":"bc1fl",
-    "body":"bc1fl\t$cc, $off",
-    "description":"MIPS64 bc1fl instruction",
-    "scope":"source.mips"
-  },
-  "bc1t":{
-    "prefix":"bc1t",
-    "body":"bc1t\t$cc, $off",
-    "description":"MIPS64 bc1t instruction",
-    "scope":"source.mips"
-  },
-  "bc1tl":{
-    "prefix":"bc1tl",
-    "body":"bc1tl\t$cc, $off",
-    "description":"MIPS64 bc1tl instruction",
-    "scope":"source.mips"
-  },
-  "bc2f":{
-    "prefix":"bc2f",
-    "body":"bc2f\t$cc, $off",
-    "description":"MIPS64 bc2f instruction",
-    "scope":"source.mips"
-  },
-  "bc2fl":{
-    "prefix":"bc2fl",
-    "body":"bc2fl\t$cc, $off",
-    "description":"MIPS64 bc2fl instruction",
-    "scope":"source.mips"
-  },
-  "bc2t":{
-    "prefix":"bc2t",
-    "body":"bc2t\t$cc, $off",
-    "description":"MIPS64 bc2t instruction",
-    "scope":"source.mips"
-  },
-  "bc2tl":{
-    "prefix":"bc2tl",
-    "body":"bc2tl\t$cc, $off",
-    "description":"MIPS64 bc2tl instruction",
-    "scope":"source.mips"
-  },
-  "beq":{
-    "prefix":"beq",
-    "body":"beq\t$rs, $rt, $off",
-    "description":"MIPS64 beq instruction",
-    "scope":"source.mips"
-  },
-  "beql":{
-    "prefix":"beql",
-    "body":"beql\t$rs, $rt, $off",
-    "description":"MIPS64 beql instruction",
-    "scope":"source.mips"
-  },
-  "bgez":{
-    "prefix":"bgez",
-    "body":"bgez\t$rs, $off",
-    "description":"MIPS64 bgez instruction",
-    "scope":"source.mips"
-  },
-  "bgezal":{
-    "prefix":"bgezal",
-    "body":"bgezal\t$rs, $off",
-    "description":"MIPS64 bgezal instruction",
-    "scope":"source.mips"
-  },
-  "bgezall":{
-    "prefix":"bgezall",
-    "body":"bgezall\t$rs, $off",
-    "description":"MIPS64 bgezall instruction",
-    "scope":"source.mips"
-  },
-  "bgezl":{
-    "prefix":"bgezl",
-    "body":"bgezl\t$rs, $off",
-    "description":"MIPS64 bgezl instruction",
-    "scope":"source.mips"
-  },
-  "bgtz":{
-    "prefix":"bgtz",
-    "body":"bgtz\t$rs, $off",
-    "description":"MIPS64 bgtz instruction",
-    "scope":"source.mips"
-  },
-  "bgtzl":{
-    "prefix":"bgtzl",
-    "body":"bgtzl\t$rs, $off",
-    "description":"MIPS64 bgtzl instruction",
-    "scope":"source.mips"
-  },
-  "blez":{
-    "prefix":"blez",
-    "body":"blez\t$rs, $off",
-    "description":"MIPS64 blez instruction",
-    "scope":"source.mips"
-  },
-  "blezl":{
-    "prefix":"blezl",
-    "body":"blezl\t$rs, $off",
-    "description":"MIPS64 blezl instruction",
-    "scope":"source.mips"
-  },
-  "bltz":{
-    "prefix":"bltz",
-    "body":"bltz\t$rs, $off",
-    "description":"MIPS64 bltz instruction",
-    "scope":"source.mips"
-  },
-  "bltzal":{
-    "prefix":"bltzal",
-    "body":"bltzal\t$rs, $off",
-    "description":"MIPS64 bltzal instruction",
-    "scope":"source.mips"
-  },
-  "bltzall":{
-    "prefix":"bltzall",
-    "body":"bltzall\t$rs, $off",
-    "description":"MIPS64 bltzall instruction",
-    "scope":"source.mips"
-  },
-  "bltzl":{
-    "prefix":"bltzl",
-    "body":"bltzl\t$rs, $off",
-    "description":"MIPS64 bltzl instruction",
-    "scope":"source.mips"
-  },
-  "bne":{
-    "prefix":"bne",
-    "body":"bne\t$rs, $rt, $off",
-    "description":"MIPS64 bne instruction",
-    "scope":"source.mips"
-  },
-  "bnel":{
-    "prefix":"bnel",
-    "body":"bnel\t$rs, $rt, $off",
-    "description":"MIPS64 bnel instruction",
-    "scope":"source.mips"
-  },
-  "break":{
-    "prefix":"break",
-    "body":"break",
-    "description":"MIPS64 break instruction",
-    "scope":"source.mips"
-  },
-  "c.cond.d":{
-    "prefix":"c.cond.d",
-    "body":"c.cond.d\t$cc, $fs, $ft",
-    "description":"MIPS64 c.cond.d instruction",
-    "scope":"source.mips"
-  },
-  "c.cond.s":{
-    "prefix":"c.cond.s",
-    "body":"c.cond.s\t$cc, $fs, $ft",
-    "description":"MIPS64 c.cond.s instruction",
-    "scope":"source.mips"
-  },
-  "cache":{
-    "prefix":"cache",
-    "body":"cache\t$op, $off",
-    "description":"MIPS64 cache instruction",
-    "scope":"source.mips"
-  },
-  "ceil.w.d":{
-    "prefix":"ceil.w.d",
-    "body":"ceil.w.d\t$fd, $fs",
-    "description":"MIPS64 ceil.w.d instruction",
-    "scope":"source.mips"
-  },
-  "ceil.w.s":{
-    "prefix":"ceil.w.s",
-    "body":"ceil.w.s\t$fd, $fs",
-    "description":"MIPS64 ceil.w.s instruction",
-    "scope":"source.mips"
-  },
-  "cfc1":{
-    "prefix":"cfc1",
-    "body":"cfc1\t$rt, $fs",
-    "description":"MIPS64 cfc1 instruction",
-    "scope":"source.mips"
-  },
-  "cfc2":{
-    "prefix":"cfc2",
-    "body":"cfc2\t$rt, $rd",
-    "description":"MIPS64 cfc2 instruction",
-    "scope":"source.mips"
-  },
-  "clo":{
-    "prefix":"clo",
-    "body":"clo\t$rd, $rs",
-    "description":"MIPS64 clo instruction",
-    "scope":"source.mips"
-  },
-  "clz":{
-    "prefix":"clz",
-    "body":"clz\t$rd, $rs",
-    "description":"MIPS64 clz instruction",
-    "scope":"source.mips"
-  },
-  "cop2":{
-    "prefix":"cop2",
-    "body":"cop2\t$func",
-    "description":"MIPS64 cop2 instruction",
-    "scope":"source.mips"
-  },
-  "ctc1":{
-    "prefix":"ctc1",
-    "body":"ctc1\t$rt, $fs",
-    "description":"MIPS64 ctc1 instruction",
-    "scope":"source.mips"
-  },
-  "ctc2":{
-    "prefix":"ctc2",
-    "body":"ctc2\t$rt, $rd",
-    "description":"MIPS64 ctc2 instruction",
-    "scope":"source.mips"
-  },
-  "cvt.d.s":{
-    "prefix":"cvt.d.s",
-    "body":"cvt.d.s\t$fd, $fs",
-    "description":"MIPS64 cvt.d.s instruction",
-    "scope":"source.mips"
-  },
-  "cvt.d.w":{
-    "prefix":"cvt.d.w",
-    "body":"cvt.d.w\t$fd, $fs",
-    "description":"MIPS64 cvt.d.w instruction",
-    "scope":"source.mips"
-  },
-  "cvt.s.d":{
-    "prefix":"cvt.s.d",
-    "body":"cvt.s.d\t$fd, $fs",
-    "description":"MIPS64 cvt.s.d instruction",
-    "scope":"source.mips"
-  },
-  "cvt.s.w":{
-    "prefix":"cvt.s.w",
-    "body":"cvt.s.w\t$fd, $fs",
-    "description":"MIPS64 cvt.s.w instruction",
-    "scope":"source.mips"
-  },
-  "cvt.w.d":{
-    "prefix":"cvt.w.d",
-    "body":"cvt.w.d\t$fd, $fs",
-    "description":"MIPS64 cvt.w.d instruction",
-    "scope":"source.mips"
-  },
-  "cvt.w.s":{
-    "prefix":"cvt.w.s",
-    "body":"cvt.w.s\t$fd, $fs",
-    "description":"MIPS64 cvt.w.s instruction",
-    "scope":"source.mips"
-  },
-  "div":{
-    "prefix":"div",
-    "body":"div\t$rs, $rt",
-    "description":"MIPS64 div instruction",
-    "scope":"source.mips"
-  },
-  "div.d":{
-    "prefix":"div.d",
-    "body":"div.d\t$fd, $fs, $ft",
-    "description":"MIPS64 div.d instruction",
-    "scope":"source.mips"
-  },
-  "div.s":{
-    "prefix":"div.s",
-    "body":"div.s\t$fd, $fs, $ft",
-    "description":"MIPS64 div.s instruction",
-    "scope":"source.mips"
-  },
-  "divu":{
-    "prefix":"divu",
-    "body":"divu\t$rs, $rt",
-    "description":"MIPS64 divu instruction",
-    "scope":"source.mips"
-  },
-  "eret":{
-    "prefix":"eret",
-    "body":"eret",
-    "description":"MIPS64 eret instruction",
-    "scope":"source.mips"
-  },
-  "floor.w.d":{
-    "prefix":"floor.w.d",
-    "body":"floor.w.d\t$fd, $fs",
-    "description":"MIPS64 floor.w.d instruction",
-    "scope":"source.mips"
-  },
-  "floor.w.s":{
-    "prefix":"floor.w.s",
-    "body":"floor.w.s\t$fd, $fs",
-    "description":"MIPS64 floor.w.s instruction",
-    "scope":"source.mips"
-  },
-  "j":{
-    "prefix":"j",
-    "body":"j\t$target",
-    "description":"MIPS64 j instruction",
-    "scope":"source.mips"
-  },
-  "jal":{
-    "prefix":"jal",
-    "body":"jal\t$target",
-    "description":"MIPS64 jal instruction",
-    "scope":"source.mips"
-  },
-  "jalr":{
-    "prefix":"jalr",
-    "body":"jalr\t$rd, $rs",
-    "description":"MIPS64 jalr instruction",
-    "scope":"source.mips"
-  },
-  "jr":{
-    "prefix":"jr",
-    "body":"jr\t$rs",
-    "description":"MIPS64 jr instruction",
-    "scope":"source.mips"
-  },
-  "lb":{
-    "prefix":"lb",
-    "body":"lb\t$rt, $addr",
-    "description":"MIPS64 lb instruction",
-    "scope":"source.mips"
-  },
-  "lbu":{
-    "prefix":"lbu",
-    "body":"lbu\t$rt, $addr",
-    "description":"MIPS64 lbu instruction",
-    "scope":"source.mips"
-  },
-  "ldc1":{
-    "prefix":"ldc1",
-    "body":"ldc1\t$ft, $addr",
-    "description":"MIPS64 ldc1 instruction",
-    "scope":"source.mips"
-  },
-  "ldc2":{
-    "prefix":"ldc2",
-    "body":"ldc2\t$rt, $addr",
-    "description":"MIPS64 ldc2 instruction",
-    "scope":"source.mips"
-  },
-  "lh":{
-    "prefix":"lh",
-    "body":"lh\t$rt, $addr",
-    "description":"MIPS64 lh instruction",
-    "scope":"source.mips"
-  },
-  "lhu":{
-    "prefix":"lhu",
-    "body":"lhu\t$rt, $addr",
-    "description":"MIPS64 lhu instruction",
-    "scope":"source.mips"
-  },
-  "ll":{
-    "prefix":"ll",
-    "body":"ll\t$rt, $addr",
-    "description":"MIPS64 ll instruction",
-    "scope":"source.mips"
-  },
-  "lui":{
-    "prefix":"lui",
-    "body":"lui\t$rt, $val",
-    "description":"MIPS64 lui instruction",
-    "scope":"source.mips"
-  },
-  "lw":{
-    "prefix":"lw",
-    "body":"lw\t$rt, $addr",
-    "description":"MIPS64 lw instruction",
-    "scope":"source.mips"
-  },
-  "lwc1":{
-    "prefix":"lwc1",
-    "body":"lwc1\t$ft, $addr",
-    "description":"MIPS64 lwc1 instruction",
-    "scope":"source.mips"
-  },
-  "lwc2":{
-    "prefix":"lwc2",
-    "body":"lwc2\t$rt, $addr",
-    "description":"MIPS64 lwc2 instruction",
-    "scope":"source.mips"
-  },
-  "lwl":{
-    "prefix":"lwl",
-    "body":"lwl\t$rt, $addr",
-    "description":"MIPS64 lwl instruction",
-    "scope":"source.mips"
-  },
-  "lwr":{
-    "prefix":"lwr",
-    "body":"lwr\t$rt, $addr",
-    "description":"MIPS64 lwr instruction",
-    "scope":"source.mips"
-  },
-  "madd":{
-    "prefix":"madd",
-    "body":"madd\t$rs, $rt",
-    "description":"MIPS64 madd instruction",
-    "scope":"source.mips"
-  },
-  "maddu":{
-    "prefix":"maddu",
-    "body":"maddu\t$rs, $rt",
-    "description":"MIPS64 maddu instruction",
-    "scope":"source.mips"
-  },
-  "mfc0":{
-    "prefix":"mfc0",
-    "body":"mfc0\t$rt, $rd",
-    "description":"MIPS64 mfc0 instruction",
-    "scope":"source.mips"
-  },
-  "mfc1":{
-    "prefix":"mfc1",
-    "body":"mfc1\t$rt, $fs",
-    "description":"MIPS64 mfc1 instruction",
-    "scope":"source.mips"
-  },
-  "mfc2":{
-    "prefix":"mfc2",
-    "body":"mfc2\t$rt, $rd",
-    "description":"MIPS64 mfc2 instruction",
-    "scope":"source.mips"
-  },
-  "mfhi":{
-    "prefix":"mfhi",
-    "body":"mfhi\t$rd",
-    "description":"MIPS64 mfhi instruction",
-    "scope":"source.mips"
-  },
-  "mflo":{
-    "prefix":"mflo",
-    "body":"mflo\t$rd",
-    "description":"MIPS64 mflo instruction",
-    "scope":"source.mips"
-  },
-  "mov.d":{
-    "prefix":"mov.d",
-    "body":"mov.d\t$fd, $fs",
-    "description":"MIPS64 mov.d instruction",
-    "scope":"source.mips"
-  },
-  "mov.s":{
-    "prefix":"mov.s",
-    "body":"mov.s\t$fd, $fs",
-    "description":"MIPS64 mov.s instruction",
-    "scope":"source.mips"
-  },
-  "movf":{
-    "prefix":"movf",
-    "body":"movf\t$rd, $rs, $cc",
-    "description":"MIPS64 movf instruction",
-    "scope":"source.mips"
-  },
-  "movf.d":{
-    "prefix":"movf.d",
-    "body":"movf.d\t$fd, $fs, $cc",
-    "description":"MIPS64 movf.d instruction",
-    "scope":"source.mips"
-  },
-  "movf.s":{
-    "prefix":"movf.s",
-    "body":"movf.s\t$fd, $fs, $cc",
-    "description":"MIPS64 movf.s instruction",
-    "scope":"source.mips"
-  },
-  "movn":{
-    "prefix":"movn",
-    "body":"movn\t$rd, $rs, $rt",
-    "description":"MIPS64 movn instruction",
-    "scope":"source.mips"
-  },
-  "movn.d":{
-    "prefix":"movn.d",
-    "body":"movn.d\t$fd, $fs, $rt",
-    "description":"MIPS64 movn.d instruction",
-    "scope":"source.mips"
-  },
-  "movn.s":{
-    "prefix":"movn.s",
-    "body":"movn.s\t$fd, $fs, $rt",
-    "description":"MIPS64 movn.s instruction",
-    "scope":"source.mips"
-  },
-  "movt":{
-    "prefix":"movt",
-    "body":"movt\t$rd, $rs, $cc",
-    "description":"MIPS64 movt instruction",
-    "scope":"source.mips"
-  },
-  "movt.d":{
-    "prefix":"movt.d",
-    "body":"movt.d\t$fd, $fs, $cc",
-    "description":"MIPS64 movt.d instruction",
-    "scope":"source.mips"
-  },
-  "movt.s":{
-    "prefix":"movt.s",
-    "body":"movt.s\t$fd, $fs, $cc",
-    "description":"MIPS64 movt.s instruction",
-    "scope":"source.mips"
-  },
-  "movz":{
-    "prefix":"movz",
-    "body":"movz\t$rd, $rs, $rt",
-    "description":"MIPS64 movz instruction",
-    "scope":"source.mips"
-  },
-  "movz.d":{
-    "prefix":"movz.d",
-    "body":"movz.d\t$fd, $fs, $ft",
-    "description":"MIPS64 movz.d instruction",
-    "scope":"source.mips"
-  },
-  "movz.s":{
-    "prefix":"movz.s",
-    "body":"movz.s\t$fd, $fs, $ft",
-    "description":"MIPS64 movz.s instruction",
-    "scope":"source.mips"
-  },
-  "msub":{
-    "prefix":"msub",
-    "body":"msub\t$rs, $rt",
-    "description":"MIPS64 msub instruction",
-    "scope":"source.mips"
-  },
-  "msubu":{
-    "prefix":"msubu",
-    "body":"msubu\t$rs, $rt",
-    "description":"MIPS64 msubu instruction",
-    "scope":"source.mips"
-  },
-  "mtc0":{
-    "prefix":"mtc0",
-    "body":"mtc0\t$rt, $rd",
-    "description":"MIPS64 mtc0 instruction",
-    "scope":"source.mips"
-  },
-  "mtc1":{
-    "prefix":"mtc1",
-    "body":"mtc1\t$rt, $fs",
-    "description":"MIPS64 mtc1 instruction",
-    "scope":"source.mips"
-  },
-  "mtc2":{
-    "prefix":"mtc2",
-    "body":"mtc2\t$rt, $rd, $sel",
-    "description":"MIPS64 mtc2 instruction",
-    "scope":"source.mips"
-  },
-  "mthi":{
-    "prefix":"mthi",
-    "body":"mthi\t$rs",
-    "description":"MIPS64 mthi instruction",
-    "scope":"source.mips"
-  },
-  "mtlo":{
-    "prefix":"mtlo",
-    "body":"mtlo\t$rs",
-    "description":"MIPS64 mtlo instruction",
-    "scope":"source.mips"
-  },
-  "mul":{
-    "prefix":"mul",
-    "body":"mul\t$rd, $rs, $rt",
-    "description":"MIPS64 mul instruction",
-    "scope":"source.mips"
-  },
-  "mul.d":{
-    "prefix":"mul.d",
-    "body":"mul.d\t$fd, $fs, $ft",
-    "description":"MIPS64 mul.d instruction",
-    "scope":"source.mips"
-  },
-  "mul.s":{
-    "prefix":"mul.s",
-    "body":"mul.s\t$fd, $fs, $ft",
-    "description":"MIPS64 mul.s instruction",
-    "scope":"source.mips"
-  },
-  "mult":{
-    "prefix":"mult",
-    "body":"mult\t$rs, $rt",
-    "description":"MIPS64 mult instruction",
-    "scope":"source.mips"
-  },
-  "multu":{
-    "prefix":"multu",
-    "body":"multu\t$rs, $rt",
-    "description":"MIPS64 multu instruction",
-    "scope":"source.mips"
-  },
-  "neg.d":{
-    "prefix":"neg.d",
-    "body":"neg.d\t$fd, $fs",
-    "description":"MIPS64 neg.d instruction",
-    "scope":"source.mips"
-  },
-  "neg.s":{
-    "prefix":"neg.s",
-    "body":"neg.s\t$fd, $fs",
-    "description":"MIPS64 neg.s instruction",
-    "scope":"source.mips"
-  },
-  "nop":{
-    "prefix":"nop",
-    "body":"nop",
-    "description":"MIPS64 nop instruction",
-    "scope":"source.mips"
-  },
-  "nor":{
-    "prefix":"nor",
-    "body":"nor\t$rd, $rs, $rt",
-    "description":"MIPS64 nor instruction",
-    "scope":"source.mips"
-  },
-  "or":{
-    "prefix":"or",
-    "body":"or\t$rd, $rs, $rt",
-    "description":"MIPS64 or instruction",
-    "scope":"source.mips"
-  },
-  "ori":{
-    "prefix":"ori",
-    "body":"ori\t$rt, $rs, $val",
-    "description":"MIPS64 ori instruction",
-    "scope":"source.mips"
-  },
-  "pref":{
-    "prefix":"pref",
-    "body":"pref\t$hint, $addr",
-    "description":"MIPS64 pref instruction",
-    "scope":"source.mips"
-  },
-  "round.w.d":{
-    "prefix":"round.w.d",
-    "body":"round.w.d\t$fd, $fs",
-    "description":"MIPS64 round.w.d instruction",
-    "scope":"source.mips"
-  },
-  "round.w.s":{
-    "prefix":"round.w.s",
-    "body":"round.w.s\t$fd, $fs",
-    "description":"MIPS64 round.w.s instruction",
-    "scope":"source.mips"
-  },
-  "sb":{
-    "prefix":"sb",
-    "body":"sb\t$rt, $addr",
-    "description":"MIPS64 sb instruction",
-    "scope":"source.mips"
-  },
-  "sc":{
-    "prefix":"sc",
-    "body":"sc\t$rt, $addr",
-    "description":"MIPS64 sc instruction",
-    "scope":"source.mips"
-  },
-  "sdc1":{
-    "prefix":"sdc1",
-    "body":"sdc1\t$ft, $addr",
-    "description":"MIPS64 sdc1 instruction",
-    "scope":"source.mips"
-  },
-  "sdc2":{
-    "prefix":"sdc2",
-    "body":"sdc2\t$rt, $addr",
-    "description":"MIPS64 sdc2 instruction",
-    "scope":"source.mips"
-  },
-  "sh":{
-    "prefix":"sh",
-    "body":"sh\t$rt, $addr",
-    "description":"MIPS64 sh instruction",
-    "scope":"source.mips"
-  },
-  "sll":{
-    "prefix":"sll",
-    "body":"sll\t$rd, $rt, $sa",
-    "description":"MIPS64 sll instruction",
-    "scope":"source.mips"
-  },
-  "sllv":{
-    "prefix":"sllv",
-    "body":"sllv\t$rd, $rt, $rs",
-    "description":"MIPS64 sllv instruction",
-    "scope":"source.mips"
-  },
-  "slt":{
-    "prefix":"slt",
-    "body":"slt\t$rd, $rs, $rt",
-    "description":"MIPS64 slt instruction",
-    "scope":"source.mips"
-  },
-  "slti":{
-    "prefix":"slti",
-    "body":"slti\t$rt, $rs, $val",
-    "description":"MIPS64 slti instruction",
-    "scope":"source.mips"
-  },
-  "sltiu":{
-    "prefix":"sltiu",
-    "body":"sltiu\t$rt, $rs, $val",
-    "description":"MIPS64 sltiu instruction",
-    "scope":"source.mips"
-  },
-  "sltu":{
-    "prefix":"sltu",
-    "body":"sltu\t$rd, $rs, $rt",
-    "description":"MIPS64 sltu instruction",
-    "scope":"source.mips"
-  },
-  "sqrt.d":{
-    "prefix":"sqrt.d",
-    "body":"sqrt.d\t$fd, $fs",
-    "description":"MIPS64 sqrt.d instruction",
-    "scope":"source.mips"
-  },
-  "sqrt.s":{
-    "prefix":"sqrt.s",
-    "body":"sqrt.s\t$fd, $fs",
-    "description":"MIPS64 sqrt.s instruction",
-    "scope":"source.mips"
-  },
-  "sra":{
-    "prefix":"sra",
-    "body":"sra\t$rt, $rt, $sa",
-    "description":"MIPS64 sra instruction",
-    "scope":"source.mips"
-  },
-  "srav":{
-    "prefix":"srav",
-    "body":"srav\t$rd, $rt, $rs",
-    "description":"MIPS64 srav instruction",
-    "scope":"source.mips"
-  },
-  "srl":{
-    "prefix":"srl",
-    "body":"srl\t$rd, $rt, $sa",
-    "description":"MIPS64 srl instruction",
-    "scope":"source.mips"
-  },
-  "srlv":{
-    "prefix":"srlv",
-    "body":"srlv\t$rd, $rt, $rs",
-    "description":"MIPS64 srlv instruction",
-    "scope":"source.mips"
-  },
-  "ssnop":{
-    "prefix":"ssnop",
-    "body":"ssnop",
-    "description":"MIPS64 ssnop instruction",
-    "scope":"source.mips"
-  },
-  "sub":{
-    "prefix":"sub",
-    "body":"sub\t$rd, $rs, $rt",
-    "description":"MIPS64 sub instruction",
-    "scope":"source.mips"
-  },
-  "sub.d":{
-    "prefix":"sub.d",
-    "body":"sub.d\t$fd, $fs, $ft",
-    "description":"MIPS64 sub.d instruction",
-    "scope":"source.mips"
-  },
-  "sub.s":{
-    "prefix":"sub.s",
-    "body":"sub.s\t$fd, $fs, $ft",
-    "description":"MIPS64 sub.s instruction",
-    "scope":"source.mips"
-  },
-  "subu":{
-    "prefix":"subu",
-    "body":"subu\t$rd, $rs, $rt",
-    "description":"MIPS64 subu instruction",
-    "scope":"source.mips"
-  },
-  "sw":{
-    "prefix":"sw",
-    "body":"sw\t$rt, $addr",
-    "description":"MIPS64 sw instruction",
-    "scope":"source.mips"
-  },
-  "swc1":{
-    "prefix":"swc1",
-    "body":"swc1\t$ft, $addr",
-    "description":"MIPS64 swc1 instruction",
-    "scope":"source.mips"
-  },
-  "swc2":{
-    "prefix":"swc2",
-    "body":"swc2\t$rt, $addr",
-    "description":"MIPS64 swc2 instruction",
-    "scope":"source.mips"
-  },
-  "swl":{
-    "prefix":"swl",
-    "body":"swl\t$rt, $addr",
-    "description":"MIPS64 swl instruction",
-    "scope":"source.mips"
-  },
-  "swr":{
-    "prefix":"swr",
-    "body":"swr\t$rt, $addr",
-    "description":"MIPS64 swr instruction",
-    "scope":"source.mips"
-  },
-  "sync":{
-    "prefix":"sync",
-    "body":"sync",
-    "description":"MIPS64 sync instruction",
-    "scope":"source.mips"
-  },
-  "syscall":{
-    "prefix":"syscall",
-    "body":"syscall\t$code",
-    "description":"MIPS64 syscall instruction",
-    "scope":"source.mips"
-  },
-  "teq":{
-    "prefix":"teq",
-    "body":"teq\t$rs, $rt",
-    "description":"MIPS64 teq instruction",
-    "scope":"source.mips"
-  },
-  "teqi":{
-    "prefix":"teqi",
-    "body":"teqi\t$rs, $val",
-    "description":"MIPS64 teqi instruction",
-    "scope":"source.mips"
-  },
-  "tge":{
-    "prefix":"tge",
-    "body":"tge\t$rs, $rt",
-    "description":"MIPS64 tge instruction",
-    "scope":"source.mips"
-  },
-  "tgei":{
-    "prefix":"tgei",
-    "body":"tgei\t$rs, $val",
-    "description":"MIPS64 tgei instruction",
-    "scope":"source.mips"
-  },
-  "tgeiu":{
-    "prefix":"tgeiu",
-    "body":"tgeiu\t$rs, $val",
-    "description":"MIPS64 tgeiu instruction",
-    "scope":"source.mips"
-  },
-  "tgeu":{
-    "prefix":"tgeu",
-    "body":"tgeu\t$rs, $rt",
-    "description":"MIPS64 tgeu instruction",
-    "scope":"source.mips"
-  },
-  "tlbp":{
-    "prefix":"tlbp",
-    "body":"tlbp",
-    "description":"MIPS64 tlbp instruction",
-    "scope":"source.mips"
-  },
-  "tlbr":{
-    "prefix":"tlbr",
-    "body":"tlbr",
-    "description":"MIPS64 tlbr instruction",
-    "scope":"source.mips"
-  },
-  "tlbwi":{
-    "prefix":"tlbwi",
-    "body":"tlbwi",
-    "description":"MIPS64 tlbwi instruction",
-    "scope":"source.mips"
-  },
-  "tlbwr":{
-    "prefix":"tlbwr",
-    "body":"tlbwr",
-    "description":"MIPS64 tlbwr instruction",
-    "scope":"source.mips"
-  },
-  "tlt":{
-    "prefix":"tlt",
-    "body":"tlt\t$rs, $rt",
-    "description":"MIPS64 tlt instruction",
-    "scope":"source.mips"
-  },
-  "tlti":{
-    "prefix":"tlti",
-    "body":"tlti\t$rs, $val",
-    "description":"MIPS64 tlti instruction",
-    "scope":"source.mips"
-  },
-  "tltiu":{
-    "prefix":"tltiu",
-    "body":"tltiu\t$rs, $val",
-    "description":"MIPS64 tltiu instruction",
-    "scope":"source.mips"
-  },
-  "tltu":{
-    "prefix":"tltu",
-    "body":"tltu\t$rs, $rt",
-    "description":"MIPS64 tltu instruction",
-    "scope":"source.mips"
-  },
-  "tne":{
-    "prefix":"tne",
-    "body":"tne\t$rs, $rt",
-    "description":"MIPS64 tne instruction",
-    "scope":"source.mips"
-  },
-  "tnei":{
-    "prefix":"tnei",
-    "body":"tnei\t$rs, $val",
-    "description":"MIPS64 tnei instruction",
-    "scope":"source.mips"
-  },
-  "trunc.w.d":{
-    "prefix":"trunc.w.d",
-    "body":"trunc.w.d\t$fd, $fs",
-    "description":"MIPS64 trunc.w.d instruction",
-    "scope":"source.mips"
-  },
-  "trunc.w.s":{
-    "prefix":"trunc.w.s",
-    "body":"trunc.w.s\t$fd, $fs",
-    "description":"MIPS64 trunc.w.s instruction",
-    "scope":"source.mips"
-  },
-  "wait":{
-    "prefix":"wait",
-    "body":"wait",
-    "description":"MIPS64 wait instruction",
-    "scope":"source.mips"
-  },
-  "xor":{
-    "prefix":"xor",
-    "body":"xor\t$rd, $rs, $rt",
-    "description":"MIPS64 xor instruction",
-    "scope":"source.mips"
-  },
-  "xori":{
-    "prefix":"xori",
-    "body":"xori\t$rt, $rs, $val",
-    "description":"MIPS64 xori instruction",
-    "scope":"source.mips"
-  },
-  "abs.ps":{
-    "prefix":"abs.ps",
-    "body":"abs.ps\t$fd, $fs",
-    "description":"MIPS64 abs.ps instruction",
-    "scope":"source.mips"
-  },
-  "add.ps":{
-    "prefix":"add.ps",
-    "body":"add.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 add.ps instruction",
-    "scope":"source.mips"
-  },
-  "alnv.ps":{
-    "prefix":"alnv.ps",
-    "body":"alnv.ps\t$fd, $fs, $ft, $rs",
-    "description":"MIPS64 alnv.ps instruction",
-    "scope":"source.mips"
-  },
-  "c.cond.ps":{
-    "prefix":"c.cond.ps",
-    "body":"c.cond.ps\t$cc, $fs, $ft",
-    "description":"MIPS64 c.cond.ps instruction",
-    "scope":"source.mips"
-  },
-  "ceil.l.d":{
-    "prefix":"ceil.l.d",
-    "body":"ceil.l.d\t$fd, $fs",
-    "description":"MIPS64 ceil.l.d instruction",
-    "scope":"source.mips"
-  },
-  "ceil.l.s":{
-    "prefix":"ceil.l.s",
-    "body":"ceil.l.s\t$fd, $fs",
-    "description":"MIPS64 ceil.l.s instruction",
-    "scope":"source.mips"
-  },
-  "cvt.d.l":{
-    "prefix":"cvt.d.l",
-    "body":"cvt.d.l\t$fd, $fs",
-    "description":"MIPS64 cvt.d.l instruction",
-    "scope":"source.mips"
-  },
-  "cvt.l.d":{
-    "prefix":"cvt.l.d",
-    "body":"cvt.l.d\t$fd, $fs",
-    "description":"MIPS64 cvt.l.d instruction",
-    "scope":"source.mips"
-  },
-  "cvt.l.s":{
-    "prefix":"cvt.l.s",
-    "body":"cvt.l.s\t$fd, $fs",
-    "description":"MIPS64 cvt.l.s instruction",
-    "scope":"source.mips"
-  },
-  "cvt.ps.s":{
-    "prefix":"cvt.ps.s",
-    "body":"cvt.ps.s\t$fd, $fs, $ft",
-    "description":"MIPS64 cvt.ps.s instruction",
-    "scope":"source.mips"
-  },
-  "cvt.s.l":{
-    "prefix":"cvt.s.l",
-    "body":"cvt.s.l\t$fd, $fs",
-    "description":"MIPS64 cvt.s.l instruction",
-    "scope":"source.mips"
-  },
-  "cvt.s.pl":{
-    "prefix":"cvt.s.pl",
-    "body":"cvt.s.pl\t$fd, $fs",
-    "description":"MIPS64 cvt.s.pl instruction",
-    "scope":"source.mips"
-  },
-  "cvt.s.pu":{
-    "prefix":"cvt.s.pu",
-    "body":"cvt.s.pu\t$fd, $fs",
-    "description":"MIPS64 cvt.s.pu instruction",
-    "scope":"source.mips"
-  },
-  "dadd":{
-    "prefix":"dadd",
-    "body":"dadd\t$rd, $rs, $rt",
-    "description":"MIPS64 dadd instruction",
-    "scope":"source.mips"
-  },
-  "daddi":{
-    "prefix":"daddi",
-    "body":"daddi\t$rt, $rs, $val",
-    "description":"MIPS64 daddi instruction",
-    "scope":"source.mips"
-  },
-  "daddiu":{
-    "prefix":"daddiu",
-    "body":"daddiu\t$rt, $rs, $val",
-    "description":"MIPS64 daddiu instruction",
-    "scope":"source.mips"
-  },
-  "daddu":{
-    "prefix":"daddu",
-    "body":"daddu\t$rd, $rs, $rt",
-    "description":"MIPS64 daddu instruction",
-    "scope":"source.mips"
-  },
-  "dclo":{
-    "prefix":"dclo",
-    "body":"dclo\t$rd, $rs",
-    "description":"MIPS64 dclo instruction",
-    "scope":"source.mips"
-  },
-  "ddiv":{
-    "prefix":"ddiv",
-    "body":"ddiv\t$rs, $rt",
-    "description":"MIPS64 ddiv instruction",
-    "scope":"source.mips"
-  },
-  "ddivu":{
-    "prefix":"ddivu",
-    "body":"ddivu\t$rs, $rt",
-    "description":"MIPS64 ddivu instruction",
-    "scope":"source.mips"
-  },
-  "dmfc0":{
-    "prefix":"dmfc0",
-    "body":"dmfc0\t$rt, $rd, $sel",
-    "description":"MIPS64 dmfc0 instruction",
-    "scope":"source.mips"
-  },
-  "dmfc1":{
-    "prefix":"dmfc1",
-    "body":"dmfc1\t$rt, $fs",
-    "description":"MIPS64 dmfc1 instruction",
-    "scope":"source.mips"
-  },
-  "dmfc2":{
-    "prefix":"dmfc2",
-    "body":"dmfc2\t$rt, $rd, $sel",
-    "description":"MIPS64 dmfc2 instruction",
-    "scope":"source.mips"
-  },
-  "dmtc0":{
-    "prefix":"dmtc0",
-    "body":"dmtc0\t$rt, $rd, $sel",
-    "description":"MIPS64 dmtc0 instruction",
-    "scope":"source.mips"
-  },
-  "dmtc1":{
-    "prefix":"dmtc1",
-    "body":"dmtc1\t$rt, $fs",
-    "description":"MIPS64 dmtc1 instruction",
-    "scope":"source.mips"
-  },
-  "dmtc2":{
-    "prefix":"dmtc2",
-    "body":"dmtc2\t$rt, $rd, $sel",
-    "description":"MIPS64 dmtc2 instruction",
-    "scope":"source.mips"
-  },
-  "dmult":{
-    "prefix":"dmult",
-    "body":"dmult\t$rs, $rt",
-    "description":"MIPS64 dmult instruction",
-    "scope":"source.mips"
-  },
-  "dmultu":{
-    "prefix":"dmultu",
-    "body":"dmultu\t$rs, $rt",
-    "description":"MIPS64 dmultu instruction",
-    "scope":"source.mips"
-  },
-  "dsll":{
-    "prefix":"dsll",
-    "body":"dsll\t$rd, $rt, $sa",
-    "description":"MIPS64 dsll instruction",
-    "scope":"source.mips"
-  },
-  "dsll32":{
-    "prefix":"dsll32",
-    "body":"dsll32\t$rd, $rt, $sa",
-    "description":"MIPS64 dsll32 instruction",
-    "scope":"source.mips"
-  },
-  "dsllv":{
-    "prefix":"dsllv",
-    "body":"dsllv\t$rd, $rt, $rs",
-    "description":"MIPS64 dsllv instruction",
-    "scope":"source.mips"
-  },
-  "dsra":{
-    "prefix":"dsra",
-    "body":"dsra\t$rd, $rt, $sa",
-    "description":"MIPS64 dsra instruction",
-    "scope":"source.mips"
-  },
-  "dsra32":{
-    "prefix":"dsra32",
-    "body":"dsra32\t$rd, $rt, $sa",
-    "description":"MIPS64 dsra32 instruction",
-    "scope":"source.mips"
-  },
-  "dsrav":{
-    "prefix":"dsrav",
-    "body":"dsrav\t$rd, $rt, $rs",
-    "description":"MIPS64 dsrav instruction",
-    "scope":"source.mips"
-  },
-  "dsrl":{
-    "prefix":"dsrl",
-    "body":"dsrl\t$rd, $rt, $sa",
-    "description":"MIPS64 dsrl instruction",
-    "scope":"source.mips"
-  },
-  "dsrl32":{
-    "prefix":"dsrl32",
-    "body":"dsrl32\t$rd, $rt, $sa",
-    "description":"MIPS64 dsrl32 instruction",
-    "scope":"source.mips"
-  },
-  "dsrlv":{
-    "prefix":"dsrlv",
-    "body":"dsrlv\t$rd, $rt, $rs",
-    "description":"MIPS64 dsrlv instruction",
-    "scope":"source.mips"
-  },
-  "dsub":{
-    "prefix":"dsub",
-    "body":"dsub\t$rd, $rs, $rt",
-    "description":"MIPS64 dsub instruction",
-    "scope":"source.mips"
-  },
-  "dsubu":{
-    "prefix":"dsubu",
-    "body":"dsubu\t$rd, $rs, $rt",
-    "description":"MIPS64 dsubu instruction",
-    "scope":"source.mips"
-  },
-  "floor.l.d":{
-    "prefix":"floor.l.d",
-    "body":"floor.l.d\t$fd, $fs",
-    "description":"MIPS64 floor.l.d instruction",
-    "scope":"source.mips"
-  },
-  "floor.l.s":{
-    "prefix":"floor.l.s",
-    "body":"floor.l.s\t$fd, $fs",
-    "description":"MIPS64 floor.l.s instruction",
-    "scope":"source.mips"
-  },
-  "ld":{
-    "prefix":"ld",
-    "body":"ld\t$rt, $addr",
-    "description":"MIPS64 ld instruction",
-    "scope":"source.mips"
-  },
-  "ldl":{
-    "prefix":"ldl",
-    "body":"ldl\t$rt, $addr",
-    "description":"MIPS64 ldl instruction",
-    "scope":"source.mips"
-  },
-  "ldr":{
-    "prefix":"ldr",
-    "body":"ldr\t$rt, $addr",
-    "description":"MIPS64 ldr instruction",
-    "scope":"source.mips"
-  },
-  "ldxc1":{
-    "prefix":"ldxc1",
-    "body":"ldxc1\t$fd, $addr",
-    "description":"MIPS64 ldxc1 instruction",
-    "scope":"source.mips"
-  },
-  "lld":{
-    "prefix":"lld",
-    "body":"lld\t$rt, $addr",
-    "description":"MIPS64 lld instruction",
-    "scope":"source.mips"
-  },
-  "luxc1":{
-    "prefix":"luxc1",
-    "body":"luxc1\t$fd, $addr",
-    "description":"MIPS64 luxc1 instruction",
-    "scope":"source.mips"
-  },
-  "lwu":{
-    "prefix":"lwu",
-    "body":"lwu\t$rt, $addr",
-    "description":"MIPS64 lwu instruction",
-    "scope":"source.mips"
-  },
-  "lwxc1":{
-    "prefix":"lwxc1",
-    "body":"lwxc1\t$fd, $addr",
-    "description":"MIPS64 lwxc1 instruction",
-    "scope":"source.mips"
-  },
-  "madd.d":{
-    "prefix":"madd.d",
-    "body":"madd.d\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 madd.d instruction",
-    "scope":"source.mips"
-  },
-  "madd.ps":{
-    "prefix":"madd.ps",
-    "body":"madd.ps\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 madd.ps instruction",
-    "scope":"source.mips"
-  },
-  "madd.s":{
-    "prefix":"madd.s",
-    "body":"madd.s\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 madd.s instruction",
-    "scope":"source.mips"
-  },
-  "mov.ps":{
-    "prefix":"mov.ps",
-    "body":"mov.ps\t$fd, $fs",
-    "description":"MIPS64 mov.ps instruction",
-    "scope":"source.mips"
-  },
-  "movf.ps":{
-    "prefix":"movf.ps",
-    "body":"movf.ps\t$fd, $fs, $cc",
-    "description":"MIPS64 movf.ps instruction",
-    "scope":"source.mips"
-  },
-  "movn.ps":{
-    "prefix":"movn.ps",
-    "body":"movn.ps\t$fd, $fs, $rt",
-    "description":"MIPS64 movn.ps instruction",
-    "scope":"source.mips"
-  },
-  "movt.ps":{
-    "prefix":"movt.ps",
-    "body":"movt.ps\t$fd, $fs, $cc",
-    "description":"MIPS64 movt.ps instruction",
-    "scope":"source.mips"
-  },
-  "movz.ps":{
-    "prefix":"movz.ps",
-    "body":"movz.ps\t$fd, $fs, $rt",
-    "description":"MIPS64 movz.ps instruction",
-    "scope":"source.mips"
-  },
-  "msub.d":{
-    "prefix":"msub.d",
-    "body":"msub.d\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 msub.d instruction",
-    "scope":"source.mips"
-  },
-  "msub.ps":{
-    "prefix":"msub.ps",
-    "body":"msub.ps\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 msub.ps instruction",
-    "scope":"source.mips"
-  },
-  "msub.s":{
-    "prefix":"msub.s",
-    "body":"msub.s\t$fd, $fr, $fs, $ft",
-    "description":"MIPS64 msub.s instruction",
-    "scope":"source.mips"
-  },
-  "mul.ps":{
-    "prefix":"mul.ps",
-    "body":"mul.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 mul.ps instruction",
-    "scope":"source.mips"
-  },
-  "neg.ps":{
-    "prefix":"neg.ps",
-    "body":"neg.ps\t$fd, $fs",
-    "description":"MIPS64 neg.ps instruction",
-    "scope":"source.mips"
-  },
-  "nmadd.d":{
-    "prefix":"nmadd.d",
-    "body":"nmadd.d\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmadd.d instruction",
-    "scope":"source.mips"
-  },
-  "nmadd.ps":{
-    "prefix":"nmadd.ps",
-    "body":"nmadd.ps\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmadd.ps instruction",
-    "scope":"source.mips"
-  },
-  "nmadd.s":{
-    "prefix":"nmadd.s",
-    "body":"nmadd.s\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmadd.s instruction",
-    "scope":"source.mips"
-  },
-  "nmsub.d":{
-    "prefix":"nmsub.d",
-    "body":"nmsub.d\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmsub.d instruction",
-    "scope":"source.mips"
-  },
-  "nmsub.ps":{
-    "prefix":"nmsub.ps",
-    "body":"nmsub.ps\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmsub.ps instruction",
-    "scope":"source.mips"
-  },
-  "nmsub.s":{
-    "prefix":"nmsub.s",
-    "body":"nmsub.s\t$fd, $ft, $fs, $ft",
-    "description":"MIPS64 nmsub.s instruction",
-    "scope":"source.mips"
-  },
-  "pll.ps":{
-    "prefix":"pll.ps",
-    "body":"pll.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 pll.ps instruction",
-    "scope":"source.mips"
-  },
-  "plu.ps":{
-    "prefix":"plu.ps",
-    "body":"plu.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 plu.ps instruction",
-    "scope":"source.mips"
-  },
-  "prefx":{
-    "prefix":"prefx",
-    "body":"prefx\t$hint, $addr",
-    "description":"MIPS64 prefx instruction",
-    "scope":"source.mips"
-  },
-  "pul.ps":{
-    "prefix":"pul.ps",
-    "body":"pul.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 pul.ps instruction",
-    "scope":"source.mips"
-  },
-  "puu.ps":{
-    "prefix":"puu.ps",
-    "body":"puu.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 puu.ps instruction",
-    "scope":"source.mips"
-  },
-  "recip.d":{
-    "prefix":"recip.d",
-    "body":"recip.d\t$fd, $fs",
-    "description":"MIPS64 recip.d instruction",
-    "scope":"source.mips"
-  },
-  "recip.s":{
-    "prefix":"recip.s",
-    "body":"recip.s\t$fd, $fs",
-    "description":"MIPS64 recip.s instruction",
-    "scope":"source.mips"
-  },
-  "round.l.d":{
-    "prefix":"round.l.d",
-    "body":"round.l.d\t$fd, $fs",
-    "description":"MIPS64 round.l.d instruction",
-    "scope":"source.mips"
-  },
-  "round.l.s":{
-    "prefix":"round.l.s",
-    "body":"round.l.s\t$fd, $fs",
-    "description":"MIPS64 round.l.s instruction",
-    "scope":"source.mips"
-  },
-  "rsqrt.d":{
-    "prefix":"rsqrt.d",
-    "body":"rsqrt.d\t$fd, $fs",
-    "description":"MIPS64 rsqrt.d instruction",
-    "scope":"source.mips"
-  },
-  "rsqrt.s":{
-    "prefix":"rsqrt.s",
-    "body":"rsqrt.s\t$fd, $fs",
-    "description":"MIPS64 rsqrt.s instruction",
-    "scope":"source.mips"
-  },
-  "scd":{
-    "prefix":"scd",
-    "body":"scd\t$rt, $addr",
-    "description":"MIPS64 scd instruction",
-    "scope":"source.mips"
-  },
-  "sd":{
-    "prefix":"sd",
-    "body":"sd\t$rt, $addr",
-    "description":"MIPS64 sd instruction",
-    "scope":"source.mips"
-  },
-  "sdl":{
-    "prefix":"sdl",
-    "body":"sdl\t$rt, $addr",
-    "description":"MIPS64 sdl instruction",
-    "scope":"source.mips"
-  },
-  "sdr":{
-    "prefix":"sdr",
-    "body":"sdr\t$rt, $addr",
-    "description":"MIPS64 sdr instruction",
-    "scope":"source.mips"
-  },
-  "sdxc1":{
-    "prefix":"sdxc1",
-    "body":"sdxc1\t$fs, $addr",
-    "description":"MIPS64 sdxc1 instruction",
-    "scope":"source.mips"
-  },
-  "sub.ps":{
-    "prefix":"sub.ps",
-    "body":"sub.ps\t$fd, $fs, $ft",
-    "description":"MIPS64 sub.ps instruction",
-    "scope":"source.mips"
-  },
-  "suxc1":{
-    "prefix":"suxc1",
-    "body":"suxc1\t$fs, $addr",
-    "description":"MIPS64 suxc1 instruction",
-    "scope":"source.mips"
-  },
-  "swxc1":{
-    "prefix":"swxc1",
-    "body":"swxc1\t$fs, $addr",
-    "description":"MIPS64 swxc1 instruction",
-    "scope":"source.mips"
-  },
-  "trunc.l.d":{
-    "prefix":"trunc.l.d",
-    "body":"trunc.l.d\t$fd, $fs",
-    "description":"MIPS64 trunc.l.d instruction",
-    "scope":"source.mips"
-  },
-  "trunc.l.s":{
-    "prefix":"trunc.l.s",
-    "body":"trunc.l.s\t$fd, $fs",
-    "description":"MIPS64 trunc.l.s instruction",
-    "scope":"source.mips"
-  }
+    "lb": {
+        "prefix": "lb",
+        "body": "lb\t$rt, $addr",
+        "description": "WinMIPS64 lb instruction",
+        "scope": "source.mips64"
+    },
+    "lbu": {
+        "prefix": "lbu",
+        "body": "lbu\t$rt, $addr",
+        "description": "WinMIPS64 lbu instruction",
+        "scope": "source.mips64"
+    },
+    "sb": {
+        "prefix": "sb",
+        "body": "sb\t$rt, $addr",
+        "description": "WinMIPS64 sb instruction",
+        "scope": "source.mips64"
+    },
+    "lh": {
+        "prefix": "lh",
+        "body": "lh\t$rt, $addr",
+        "description": "WinMIPS64 lh instruction",
+        "scope": "source.mips64"
+    },
+    "lhu": {
+        "prefix": "lhu",
+        "body": "lhu\t$rt, $addr",
+        "description": "WinMIPS64 lhu instruction",
+        "scope": "source.mips64"
+    },
+    "sh": {
+        "prefix": "sh",
+        "body": "sh\t$rt, $addr",
+        "description": "WinMIPS64 sh instruction",
+        "scope": "source.mips64"
+    },
+    "lw": {
+        "prefix": "lw",
+        "body": "lw\t$rt, $addr",
+        "description": "WinMIPS64 lw instruction",
+        "scope": "source.mips64"
+    },
+    "lwu": {
+        "prefix": "lwu",
+        "body": "lwu\t$rt, $addr",
+        "description": "WinMIPS64 lwu instruction",
+        "scope": "source.mips64"
+    },
+    "sw": {
+        "prefix": "sw",
+        "body": "sw\t$rt, $addr",
+        "description": "WinMIPS64 sw instruction",
+        "scope": "source.mips64"
+    },
+    "ld": {
+        "prefix": "ld",
+        "body": "ld\t$rt, $addr",
+        "description": "WinMIPS64 ld instruction",
+        "scope": "source.mips64"
+    },
+    "sd": {
+        "prefix": "sd",
+        "body": "sd\t$rt, $addr",
+        "description": "WinMIPS64 sd instruction",
+        "scope": "source.mips64"
+    },
+    "l.d": {
+        "prefix": "l.d",
+        "body": "l.d\t$fd, $addr",
+        "description": "WinMIPS64 l.d instruction",
+        "scope": "source.mips64"
+    },
+    "s.d": {
+        "prefix": "s.d",
+        "body": "s.d\t$fd, $addr",
+        "description": "WinMIPS64 s.d instruction",
+        "scope": "source.mips64"
+    },
+    "halt": {
+        "prefix": "halt",
+        "body": "halt",
+        "description": "WinMIPS64 halt instruction",
+        "scope": "source.mips64"
+    },
+    "daddi": {
+        "prefix": "daddi",
+        "body": "daddi\t$rt, $rs, $val",
+        "description": "WinMIPS64 daddi instruction",
+        "scope": "source.mips64"
+    },
+    "daddui": {
+        "prefix": "daddui",
+        "body": "daddui\t$rt, $rs, $val",
+        "description": "WinMIPS64 daddui instruction",
+        "scope": "source.mips64"
+    },
+    "andi": {
+        "prefix": "andi",
+        "body": "andi\t$rt, $rs, $val",
+        "description": "WinMIPS64 andi instruction",
+        "scope": "source.mips64"
+    },
+    "ori": {
+        "prefix": "ori",
+        "body": "ori\t$rt, $rs, $val",
+        "description": "WinMIPS64 ori instruction",
+        "scope": "source.mips64"
+    },
+    "xori": {
+        "prefix": "xori",
+        "body": "xori\t$rt, $rs, $val",
+        "description": "WinMIPS64 xori instruction",
+        "scope": "source.mips64"
+    },
+    "lui": {
+        "prefix": "lui",
+        "body": "lui\t$rt, $val",
+        "description": "WinMIPS64 lui instruction",
+        "scope": "source.mips64"
+    },
+    "slti": {
+        "prefix": "slti",
+        "body": "slti\t$rt, $rs, $val",
+        "description": "WinMIPS64 slti instruction",
+        "scope": "source.mips64"
+    },
+    "sltiu": {
+        "prefix": "sltiu",
+        "body": "sltiu\t$rt, $rs, $val",
+        "description": "WinMIPS64 sltiu instruction",
+        "scope": "source.mips64"
+    },
+    "beq": {
+        "prefix": "beq",
+        "body": "beq\t$rs, $rt, $off",
+        "description": "WinMIPS64 beq instruction",
+        "scope": "source.mips64"
+    },
+    "bne": {
+        "prefix": "bne",
+        "body": "bne\t$rs, $rt, $off",
+        "description": "WinMIPS64 bne instruction",
+        "scope": "source.mips64"
+    },
+    "beqz": {
+        "prefix": "beqz",
+        "body": "beqz\t$rs, $off",
+        "description": "WinMIPS64 beqz instruction",
+        "scope": "source.mips64"
+    },
+    "bnez": {
+        "prefix": "bnez",
+        "body": "bnez\t$rs, $off",
+        "description": "WinMIPS64 bnez instruction",
+        "scope": "source.mips64"
+    },
+    "j": {
+        "prefix": "j",
+        "body": "j\t$target",
+        "description": "WinMIPS64 j instruction",
+        "scope": "source.mips64"
+    },
+    "jr": {
+        "prefix": "jr",
+        "body": "jr\t$rs",
+        "description": "WinMIPS64 jr instruction",
+        "scope": "source.mips64"
+    },
+    "jal": {
+        "prefix": "jal",
+        "body": "jal\t$target",
+        "description": "WinMIPS64 jal instruction",
+        "scope": "source.mips64"
+    },
+    "jalr": {
+        "prefix": "jalr",
+        "body": "jalr\t$rd, $rs",
+        "description": "WinMIPS64 jalr instruction",
+        "scope": "source.mips64"
+    },
+    "dsll": {
+        "prefix": "dsll",
+        "body": "dsll\t$rd, $rt, $sa",
+        "description": "WinMIPS64 dsll instruction",
+        "scope": "source.mips64"
+    },
+    "dsrl": {
+        "prefix": "dsrl",
+        "body": "dsrl\t$rd, $rt, $sa",
+        "description": "WinMIPS64 dsrl instruction",
+        "scope": "source.mips64"
+    },
+    "dsra": {
+        "prefix": "dsra",
+        "body": "dsra\t$rd, $rt, $sa",
+        "description": "WinMIPS64 dsra instruction",
+        "scope": "source.mips64"
+    },
+    "dsllv": {
+        "prefix": "dsllv",
+        "body": "dsllv\t$rd, $rt, $rs",
+        "description": "WinMIPS64 dsllv instruction",
+        "scope": "source.mips64"
+    },
+    "dsrlv": {
+        "prefix": "dsrlv",
+        "body": "dsrlv\t$rd, $rt, $rs",
+        "description": "WinMIPS64 dsrlv instruction",
+        "scope": "source.mips64"
+    },
+    "dsrav": {
+        "prefix": "dsrav",
+        "body": "dsrav\t$rd, $rt, $rs",
+        "description": "WinMIPS64 dsrav instruction",
+        "scope": "source.mips64"
+    },
+    "movz": {
+        "prefix": "movz",
+        "body": "movz\t$rd, $rs, $rt",
+        "description": "WinMIPS64 movz instruction",
+        "scope": "source.mips64"
+    },
+    "movn": {
+        "prefix": "movn",
+        "body": "movn\t$rd, $rs, $rt",
+        "description": "WinMIPS64 movn instruction",
+        "scope": "source.mips64"
+    },
+    "nop": {
+        "prefix": "nop",
+        "body": "nop",
+        "description": "WinMIPS64 nop instruction",
+        "scope": "source.mips64"
+    },
+    "and": {
+        "prefix": "and",
+        "body": "and\t$rd, $rs, $rt",
+        "description": "WinMIPS64 and instruction",
+        "scope": "source.mips64"
+    },
+    "or": {
+        "prefix": "or",
+        "body": "or\t$rd, $rs, $rt",
+        "description": "WinMIPS64 or instruction",
+        "scope": "source.mips64"
+    },
+    "xor": {
+        "prefix": "xor",
+        "body": "xor\t$rd, $rs, $rt",
+        "description": "WinMIPS64 xor instruction",
+        "scope": "source.mips64"
+    },
+    "slt": {
+        "prefix": "slt",
+        "body": "slt\t$rd, $rs, $rt",
+        "description": "WinMIPS64 slt instruction",
+        "scope": "source.mips64"
+    },
+    "sltu": {
+        "prefix": "sltu",
+        "body": "sltu\t$rd, $rs, $rt",
+        "description": "WinMIPS64 sltu instruction",
+        "scope": "source.mips64"
+    },
+    "dadd": {
+        "prefix": "dadd",
+        "body": "dadd\t$rd, $rs, $rt",
+        "description": "WinMIPS64 dadd instruction",
+        "scope": "source.mips64"
+    },
+    "daddu": {
+        "prefix": "daddu",
+        "body": "daddu\t$rd, $rs, $rt",
+        "description": "WinMIPS64 daddu instruction",
+        "scope": "source.mips64"
+    },
+    "dsub": {
+        "prefix": "dsub",
+        "body": "dsub\t$rd, $rs, $rt",
+        "description": "WinMIPS64 dsub instruction",
+        "scope": "source.mips64"
+    },
+    "dsubu": {
+        "prefix": "dsubu",
+        "body": "dsubu\t$rd, $rs, $rt",
+        "description": "WinMIPS64 dsubu instruction",
+        "scope": "source.mips64"
+    },
+    "dmul": {
+        "prefix": "dmul",
+        "body": "dmul\t$rd, $rs, $rt",
+        "description": "WinMIPS64 dmul instruction",
+        "scope": "source.mips64"
+    },
+    "dmulu": {
+        "prefix": "dmulu",
+        "body": "dmulu\t$rd, $rs, $rt",
+        "description": "WinMIPS64 dmulu instruction",
+        "scope": "source.mips64"
+    },
+    "ddiv": {
+        "prefix": "ddiv",
+        "body": "ddiv\t$rs, $rt",
+        "description": "WinMIPS64 ddiv instruction",
+        "scope": "source.mips64"
+    },
+    "ddivu": {
+        "prefix": "ddivu",
+        "body": "ddivu\t$rs, $rt",
+        "description": "WinMIPS64 ddivu instruction",
+        "scope": "source.mips64"
+    },
+    "add.d": {
+        "prefix": "add.d",
+        "body": "add.d\t$fd, $fs, $ft",
+        "description": "WinMIPS64 add.d instruction",
+        "scope": "source.mips64"
+    },
+    "sub.d": {
+        "prefix": "sub.d",
+        "body": "sub.d\t$fd, $fs, $ft",
+        "description": "WinMIPS64 sub.d instruction",
+        "scope": "source.mips64"
+    },
+    "mul.d": {
+        "prefix": "mul.d",
+        "body": "mul.d\t$fd, $fs, $ft",
+        "description": "WinMIPS64 mul.d instruction",
+        "scope": "source.mips64"
+    },
+    "div.d": {
+        "prefix": "div.d",
+        "body": "div.d\t$fd, $fs, $ft",
+        "description": "WinMIPS64 div.d instruction",
+        "scope": "source.mips64"
+    },
+    "mov.d": {
+        "prefix": "mov.d",
+        "body": "mov.d\t$fd, $fs",
+        "description": "WinMIPS64 mov.d instruction",
+        "scope": "source.mips64"
+    },
+    "cvt.d.l": {
+        "prefix": "cvt.d.l",
+        "body": "cvt.d.l\t$fd, $fs",
+        "description": "WinMIPS64 cvt.d.l instruction",
+        "scope": "source.mips64"
+    },
+    "cvt.l.d": {
+        "prefix": "cvt.l.d",
+        "body": "cvt.l.d\t$fd, $fs",
+        "description": "WinMIPS64 cvt.l.d instruction",
+        "scope": "source.mips64"
+    },
+    "c.lt.d": {
+        "prefix": "c.lt.d",
+        "body": "c.lt.d\t$fs, $ft",
+        "description": "WinMIPS64 c.lt.d instruction",
+        "scope": "source.mips64"
+    },
+    "c.le.d": {
+        "prefix": "c.le.d",
+        "body": "c.le.d\t$fs, $ft",
+        "description": "WinMIPS64 c.le.d instruction",
+        "scope": "source.mips64"
+    },
+    "c.eq.d": {
+        "prefix": "c.eq.d",
+        "body": "c.eq.d\t$fs, $ft",
+        "description": "WinMIPS64 c.eq.d instruction",
+        "scope": "source.mips64"
+    },
+    "bc1f": {
+        "prefix": "bc1f",
+        "body": "bc1f\t$off",
+        "description": "WinMIPS64 bc1f instruction",
+        "scope": "source.mips64"
+    },
+    "bc1t": {
+        "prefix": "bc1t",
+        "body": "bc1t\t$off",
+        "description": "WinMIPS64 bc1t instruction",
+        "scope": "source.mips64"
+    },
+    "mtc1": {
+        "prefix": "mtc1",
+        "body": "mtc1\t$rt, $fs",
+        "description": "WinMIPS64 mtc1 instruction",
+        "scope": "source.mips64"
+    },
+    "mfc1": {
+        "prefix": "mfc1",
+        "body": "mfc1\t$rt, $fs",
+        "description": "WinMIPS64 mfc1 instruction",
+        "scope": "source.mips64"
+    }
 }

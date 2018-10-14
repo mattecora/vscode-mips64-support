@@ -1,42 +1,69 @@
 {
-    "name": "mips64",
+    "name": "vscode-mips64-support",
     "displayName": "vscode-mips64-support",
-    "description": "MIPS64 syntax highlighting and snippets for VS Code",
-    "version": "0.0.5",
+    "description": "MIPS64 support for VS Code",
+    "version": "0.1.0",
     "publisher": "mattecora",
-    "categories": [
-        "Programming Languages"
-    ],
     "engines": {
         "vscode": "^1.0.0"
     },
+    "activationEvents": [
+        "onLanguage:mips64"
+    ],
+    "main": "./out/extension",
     "contributes": {
-        "languages": [{
-            "id": "mips64",
-            "aliases": ["MIPS64 Assembler", "mips64"],
-            "extensions": [".s",".asm"],
-            "configuration": "./language-configuration.json"
-        }, {
-            "id": "winmips64",
-            "aliases": ["WinMIPS64 Assembler", "mips64"],
-            "extensions": [".s",".asm"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "mips64",
-            "scopeName": "source.mips",
-            "path": "./syntaxes/mips64.tmLanguage"
-        }, {
-            "language": "winmips64",
-            "scopeName": "source.winmips64",
-            "path": "./syntaxes/winmips64.tmLanguage"
-        }],
-        "snippets": [{
-            "language": "mips64",
-            "path": "./snippets/mips64-snippets.json"
-        }, {
-            "language": "winmips64",
-            "path": "./snippets/winmips64-snippets.json"
-        }]
+        "languages": [
+            {
+                "id": "mips64",
+                "aliases": ["MIPS64 Assembler", "mips64"],
+                "extensions": [".s",".asm"],
+                "configuration": "./language-configuration.json"
+            }
+        ], "grammars": [
+            {
+                "language": "mips64",
+                "scopeName": "source.mips64",
+                "path": "./syntaxes/mips64.tmLanguage"
+            }
+        ], "snippets": [
+            {
+                "language": "mips64",
+                "path": "./snippets/mips64-snippets.json"
+            }
+        ],
+        "configuration": {
+            "title": "MIPS64 configuration",
+            "properties": {
+                "winmips64.path": {
+                    "type": "string",
+                    "default": "C:\\Program Files (x86)\\winmips64",
+                    "description": "The path to the winmips64 folder"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "mips64.asmBuild",
+                "title": "MIPS64: Build with asm"
+            },
+            {
+                "command": "mips64.winmips64Run",
+                "title": "MIPS64: Run with winmips64"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
     }
 }

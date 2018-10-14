@@ -1,5 +1,11 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.0
+Major changes, including:
+* Tasks replacement with native commands
+* Description of the `winmips64.path` setting
+* Support for the WinMIPS64 syntax only
+
 ## Version 0.0.5
 Tasks in batch (no need for Python anymore)
 

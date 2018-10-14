@@ -1,11 +1,6 @@
 # VS Code support for MIPS64 syntax
 
-This extension adds syntax highlighting, snippets support and tasks for the MIPS64 assembly language. It is possible to select among:
-
-- The standard MIPS64 ISA (version 1)
-- The WinMIPS64 version of the ISA
-
-You can choose the preferred syntax via the Select Language window of VS Code.
+This extension adds syntax highlighting, snippets support and build and run commands for the MIPS64 assembly language via the WinMIPS64 simulator.
 
 ## Syntax highlighting
 
@@ -24,18 +19,16 @@ The styling file was adapted from [Textmate's](https://github.com/textmate/mips.
 
 ## Snippets
 
-A snippet is provided for every single instruction of the chosen ISA, to quickly insert:
+A snippet is provided for every single instruction of the ISA, to quickly insert:
 
 * The mnemonic of the instruction (in lower case format)
 * A tabulation character
 * The list of the parameters required by the instruction, as reported on the MIPS64 language reference
 
-## Tasks running
-Starting from v0.0.4, it is also possible to run directly `asm.exe` and `winmips64.exe` from the editor, via VS Code's task interface.
+## Commands
+Starting from v0.1.0, it is possible to run directly `asm.exe` and `winmips64.exe` from the editor, via VS Code's commands palette.
 
-In order to have working tasks, you have to:
+The only thing you have to setup is the `winmips64.path` setting to match your folder structure. After that, you should be able to run the two commands via the usual interface (`Ctrl+Shift+P`); the commands' names are:
 
-- Move the `.vscode` folder into your workspace directory
-- Edit the `winmips64.path` in `settings.json` to match your folder structure
-
-Then, you should be able to run the two tasks via the usual interface (`Ctrl+Shift+P`, Run Tasks).
+* MIPS64: Build with asm
+* MIPS64: Run with winmips64
