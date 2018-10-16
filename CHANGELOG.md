@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.2
+Added symbol and item completion providers
+
 ## Version 0.1.1
 Snippets update (now containing spaces instead of tabs and a description)
 

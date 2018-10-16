@@ -80,7 +80,7 @@
     "halt": {
         "prefix": "halt",
         "body": "halt    $rt, $addr",
-        "description": "stops the program",
+        "description": "stop the program",
         "scope": "source.mips64"
     },
     "daddi": {

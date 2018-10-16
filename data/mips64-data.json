@@ -1,0 +1,38 @@
+{
+    ".space": {
+        "body": ".space",
+        "description": "leave n empty bytes"
+    },
+    ".asciiz": {
+        "body": ".asciiz",
+        "description": "enter zero terminated ascii string"
+    },
+    ".ascii": {
+        "body": ".ascii",
+        "description": "enter ascii string"
+    },
+    ".align": {
+        "body": ".align",
+        "description": "align to n-byte boundary"
+    },
+    ".word": {
+        "body": ".word",
+        "description": "enter word(s) of data (64-bits)"
+    },
+    ".byte": {
+        "body": ".byte",
+        "description": "enter bytes"
+    },
+    ".word32": {
+        "body": ".word32",
+        "description": "enter 32 bit number(s)"
+    },
+    ".word16": {
+        "body": ".word16",
+        "description": "enter 16 bit number(s)"
+    },
+    ".double": {
+        "body": ".double",
+        "description": "enter floating-point number(s)"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    ".data": {
+        "body": ".data",
+        "description": "start of data segment"
+    },
+    ".text": {
+        "body": ".text",
+        "description": "start of code segment"
+    },
+    ".code": {
+        "body": ".code",
+        "description": "start of code segment (same as .text)"
+    },
+    ".org": {
+        "body": ".org",
+        "description": "start address"
+    }
+}

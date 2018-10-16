@@ -1,0 +1,266 @@
+{
+    "lb": {
+        "body": "lb",
+        "description": "load byte"
+    },
+    "lbu": {
+        "body": "lbu",
+        "description": "load byte unsigned"
+    },
+    "sb": {
+        "body": "sb",
+        "description": "store byte"
+    },
+    "lh": {
+        "body": "lh",
+        "description": "load 16"
+    },
+    "lhu": {
+        "body": "lhu",
+        "description": "load 16"
+    },
+    "sh": {
+        "body": "sh",
+        "description": "store 16"
+    },
+    "lw": {
+        "body": "lw",
+        "description": "load 32"
+    },
+    "lwu": {
+        "body": "lwu",
+        "description": "load 32"
+    },
+    "sw": {
+        "body": "sw",
+        "description": "store 32"
+    },
+    "ld": {
+        "body": "ld",
+        "description": "load 64"
+    },
+    "sd": {
+        "body": "sd",
+        "description": "store 64"
+    },
+    "l.d": {
+        "body": "l.d",
+        "description": "load 64"
+    },
+    "s.d": {
+        "body": "s.d",
+        "description": "store 64"
+    },
+    "halt": {
+        "body": "halt",
+        "description": "stop the program"
+    },
+    "daddi": {
+        "body": "daddi",
+        "description": "add immediate"
+    },
+    "daddui": {
+        "body": "daddui",
+        "description": "add immediate unsigned"
+    },
+    "andi": {
+        "body": "andi",
+        "description": "logical and immediate"
+    },
+    "ori": {
+        "body": "ori",
+        "description": "logical or immediate"
+    },
+    "xori": {
+        "body": "xori",
+        "description": "exclusive or immediate"
+    },
+    "lui": {
+        "body": "lui",
+        "description": "load upper half of register immediate"
+    },
+    "slti": {
+        "body": "slti",
+        "description": "set if less than or equal immediate"
+    },
+    "sltiu": {
+        "body": "sltiu",
+        "description": "set if less than or equal immediate unsigned"
+    },
+    "beq": {
+        "body": "beq",
+        "description": "branch if pair of registers are equal"
+    },
+    "bne": {
+        "body": "bne",
+        "description": "branch if pair of registers are not equal"
+    },
+    "beqz": {
+        "body": "beqz",
+        "description": "branch if register is equal to zero"
+    },
+    "bnez": {
+        "body": "bnez",
+        "description": "branch if register is not equal to zero"
+    },
+    "j": {
+        "body": "j",
+        "description": "jump to address"
+    },
+    "jr": {
+        "body": "jr",
+        "description": "jump to address in register"
+    },
+    "jal": {
+        "body": "jal",
+        "description": "jump and link to address (call subroutine)"
+    },
+    "jalr": {
+        "body": "jalr",
+        "description": "jump and link to address in register (call subroutine)"
+    },
+    "dsll": {
+        "body": "dsll",
+        "description": "shift left logical"
+    },
+    "dsrl": {
+        "body": "dsrl",
+        "description": "shift right logical"
+    },
+    "dsra": {
+        "body": "dsra",
+        "description": "shift right arithmetic"
+    },
+    "dsllv": {
+        "body": "dsllv",
+        "description": "shift left logical by variable amount"
+    },
+    "dsrlv": {
+        "body": "dsrlv",
+        "description": "shift right logical by variable amount"
+    },
+    "dsrav": {
+        "body": "dsrav",
+        "description": "shift right arithmetic by variable amount"
+    },
+    "movz": {
+        "body": "movz",
+        "description": "move if register equals zero"
+    },
+    "movn": {
+        "body": "movn",
+        "description": "move if register not equal to zero"
+    },
+    "nop": {
+        "body": "nop",
+        "description": "no operation"
+    },
+    "and": {
+        "body": "and",
+        "description": "logical and"
+    },
+    "or": {
+        "body": "or",
+        "description": "logical or"
+    },
+    "xor": {
+        "body": "xor",
+        "description": "logical xor"
+    },
+    "slt": {
+        "body": "slt",
+        "description": "set if less than"
+    },
+    "sltu": {
+        "body": "sltu",
+        "description": "set if less than unsigned"
+    },
+    "dadd": {
+        "body": "dadd",
+        "description": "add integers"
+    },
+    "daddu": {
+        "body": "daddu",
+        "description": "add integers unsigned"
+    },
+    "dsub": {
+        "body": "dsub",
+        "description": "subtract integers"
+    },
+    "dsubu": {
+        "body": "dsubu",
+        "description": "subtract integers unsigned"
+    },
+    "dmul": {
+        "body": "dmul",
+        "description": "signed integer multiplication"
+    },
+    "dmulu": {
+        "body": "dmulu",
+        "description": "unsigned integer multiplication"
+    },
+    "ddiv": {
+        "body": "ddiv",
+        "description": "signed integer division"
+    },
+    "ddivu": {
+        "body": "ddivu",
+        "description": "unsigned integer division"
+    },
+    "add.d": {
+        "body": "add.d",
+        "description": "add floating"
+    },
+    "sub.d": {
+        "body": "sub.d",
+        "description": "subtract floating"
+    },
+    "mul.d": {
+        "body": "mul.d",
+        "description": "multiply floating"
+    },
+    "div.d": {
+        "body": "div.d",
+        "description": "divide floating"
+    },
+    "mov.d": {
+        "body": "mov.d",
+        "description": "move floating"
+    },
+    "cvt.d.l": {
+        "body": "cvt.d.l",
+        "description": "convert 64"
+    },
+    "cvt.l.d": {
+        "body": "cvt.l.d",
+        "description": "convert double floating"
+    },
+    "c.lt.d": {
+        "body": "c.lt.d",
+        "description": "set FP flag if less than"
+    },
+    "c.le.d": {
+        "body": "c.le.d",
+        "description": "set FP flag if less than or equal to"
+    },
+    "c.eq.d": {
+        "body": "c.eq.d",
+        "description": "set FP flag if equal to"
+    },
+    "bc1f": {
+        "body": "bc1f",
+        "description": "branch to address if FP flag is FALSE"
+    },
+    "bc1t": {
+        "body": "bc1t",
+        "description": "branch to address if FP flag is TRUE"
+    },
+    "mtc1": {
+        "body": "mtc1",
+        "description": "move data from integer register to floating"
+    },
+    "mfc1": {
+        "body": "mfc1",
+        "description": "move data from floating"
+    }
+}

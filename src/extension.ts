@@ -2,11 +2,15 @@
 
 import * as vscode from 'vscode';
 import { asmRunner, winmips64Runner } from './runners';
+import { MIPS64CompletionItemProvider } from './mips64-cip';
+import { MIPS64DocumentSymbolProvider } from './mips64-dsp';
 
 let asmCommand: vscode.Disposable | undefined = undefined;
 let winmips64Command: vscode.Disposable | undefined = undefined;
 
 let outputChannel: vscode.OutputChannel | undefined = undefined;
+
+const MIPS64_FILE: vscode.DocumentFilter = { language: 'mips64', scheme: 'file' };
 
 export function activate(context: vscode.ExtensionContext) {
     // open an output channel
@@ -55,6 +59,12 @@ export function activate(context: vscode.ExtensionContext) {
             }
         }
     );
+
+    let dsp = new MIPS64DocumentSymbolProvider();
+    let cip = new MIPS64CompletionItemProvider(context.extensionPath);
+
+    vscode.languages.registerDocumentSymbolProvider(MIPS64_FILE, dsp);
+    vscode.languages.registerCompletionItemProvider(MIPS64_FILE, cip);
 }
 
 export function deactivate() {
