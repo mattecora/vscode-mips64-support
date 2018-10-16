@@ -1,398 +1,398 @@
 {
     "lb": {
         "prefix": "lb",
-        "body": "lb\t$rt, $addr",
-        "description": "WinMIPS64 lb instruction",
+        "body": "lb      $rt, $addr",
+        "description": "load byte",
         "scope": "source.mips64"
     },
     "lbu": {
         "prefix": "lbu",
-        "body": "lbu\t$rt, $addr",
-        "description": "WinMIPS64 lbu instruction",
+        "body": "lbu     $rt, $addr",
+        "description": "load byte unsigned",
         "scope": "source.mips64"
     },
     "sb": {
         "prefix": "sb",
-        "body": "sb\t$rt, $addr",
-        "description": "WinMIPS64 sb instruction",
+        "body": "sb      $rt, $addr",
+        "description": "store byte",
         "scope": "source.mips64"
     },
     "lh": {
         "prefix": "lh",
-        "body": "lh\t$rt, $addr",
-        "description": "WinMIPS64 lh instruction",
+        "body": "lh      $rt, $addr",
+        "description": "load 16",
         "scope": "source.mips64"
     },
     "lhu": {
         "prefix": "lhu",
-        "body": "lhu\t$rt, $addr",
-        "description": "WinMIPS64 lhu instruction",
+        "body": "lhu     $rt, $addr",
+        "description": "load 16",
         "scope": "source.mips64"
     },
     "sh": {
         "prefix": "sh",
-        "body": "sh\t$rt, $addr",
-        "description": "WinMIPS64 sh instruction",
+        "body": "sh      $rt, $addr",
+        "description": "store 16",
         "scope": "source.mips64"
     },
     "lw": {
         "prefix": "lw",
-        "body": "lw\t$rt, $addr",
-        "description": "WinMIPS64 lw instruction",
+        "body": "lw      $rt, $addr",
+        "description": "load 32",
         "scope": "source.mips64"
     },
     "lwu": {
         "prefix": "lwu",
-        "body": "lwu\t$rt, $addr",
-        "description": "WinMIPS64 lwu instruction",
+        "body": "lwu     $rt, $addr",
+        "description": "load 32",
         "scope": "source.mips64"
     },
     "sw": {
         "prefix": "sw",
-        "body": "sw\t$rt, $addr",
-        "description": "WinMIPS64 sw instruction",
+        "body": "sw      $rt, $addr",
+        "description": "store 32",
         "scope": "source.mips64"
     },
     "ld": {
         "prefix": "ld",
-        "body": "ld\t$rt, $addr",
-        "description": "WinMIPS64 ld instruction",
+        "body": "ld      $rt, $addr",
+        "description": "load 64",
         "scope": "source.mips64"
     },
     "sd": {
         "prefix": "sd",
-        "body": "sd\t$rt, $addr",
-        "description": "WinMIPS64 sd instruction",
+        "body": "sd      $rt, $addr",
+        "description": "store 64",
         "scope": "source.mips64"
     },
     "l.d": {
         "prefix": "l.d",
-        "body": "l.d\t$fd, $addr",
-        "description": "WinMIPS64 l.d instruction",
+        "body": "l.d     $rt, $addr",
+        "description": "load 64",
         "scope": "source.mips64"
     },
     "s.d": {
         "prefix": "s.d",
-        "body": "s.d\t$fd, $addr",
-        "description": "WinMIPS64 s.d instruction",
+        "body": "s.d     $rt, $addr",
+        "description": "store 64",
         "scope": "source.mips64"
     },
     "halt": {
         "prefix": "halt",
-        "body": "halt",
-        "description": "WinMIPS64 halt instruction",
+        "body": "halt    $rt, $addr",
+        "description": "stops the program",
         "scope": "source.mips64"
     },
     "daddi": {
         "prefix": "daddi",
-        "body": "daddi\t$rt, $rs, $val",
-        "description": "WinMIPS64 daddi instruction",
+        "body": "daddi   $rt, $addr",
+        "description": "add immediate",
         "scope": "source.mips64"
     },
     "daddui": {
         "prefix": "daddui",
-        "body": "daddui\t$rt, $rs, $val",
-        "description": "WinMIPS64 daddui instruction",
+        "body": "daddui  $rt, $addr",
+        "description": "add immediate unsigned",
         "scope": "source.mips64"
     },
     "andi": {
         "prefix": "andi",
-        "body": "andi\t$rt, $rs, $val",
-        "description": "WinMIPS64 andi instruction",
+        "body": "andi    $rt, $addr",
+        "description": "logical and immediate",
         "scope": "source.mips64"
     },
     "ori": {
         "prefix": "ori",
-        "body": "ori\t$rt, $rs, $val",
-        "description": "WinMIPS64 ori instruction",
+        "body": "ori     $rt, $addr",
+        "description": "logical or immediate",
         "scope": "source.mips64"
     },
     "xori": {
         "prefix": "xori",
-        "body": "xori\t$rt, $rs, $val",
-        "description": "WinMIPS64 xori instruction",
+        "body": "xori    $rt, $addr",
+        "description": "exclusive or immediate",
         "scope": "source.mips64"
     },
     "lui": {
         "prefix": "lui",
-        "body": "lui\t$rt, $val",
-        "description": "WinMIPS64 lui instruction",
+        "body": "lui     $rt, $addr",
+        "description": "load upper half of register immediate",
         "scope": "source.mips64"
     },
     "slti": {
         "prefix": "slti",
-        "body": "slti\t$rt, $rs, $val",
-        "description": "WinMIPS64 slti instruction",
+        "body": "slti    $rt, $addr",
+        "description": "set if less than or equal immediate",
         "scope": "source.mips64"
     },
     "sltiu": {
         "prefix": "sltiu",
-        "body": "sltiu\t$rt, $rs, $val",
-        "description": "WinMIPS64 sltiu instruction",
+        "body": "sltiu   $rt, $addr",
+        "description": "set if less than or equal immediate unsigned",
         "scope": "source.mips64"
     },
     "beq": {
         "prefix": "beq",
-        "body": "beq\t$rs, $rt, $off",
-        "description": "WinMIPS64 beq instruction",
+        "body": "beq     $rt, $addr",
+        "description": "branch if pair of registers are equal",
         "scope": "source.mips64"
     },
     "bne": {
         "prefix": "bne",
-        "body": "bne\t$rs, $rt, $off",
-        "description": "WinMIPS64 bne instruction",
+        "body": "bne     $rt, $addr",
+        "description": "branch if pair of registers are not equal",
         "scope": "source.mips64"
     },
     "beqz": {
         "prefix": "beqz",
-        "body": "beqz\t$rs, $off",
-        "description": "WinMIPS64 beqz instruction",
+        "body": "beqz    $rt, $addr",
+        "description": "branch if register is equal to zero",
         "scope": "source.mips64"
     },
     "bnez": {
         "prefix": "bnez",
-        "body": "bnez\t$rs, $off",
-        "description": "WinMIPS64 bnez instruction",
+        "body": "bnez    $rt, $addr",
+        "description": "branch if register is not equal to zero",
         "scope": "source.mips64"
     },
     "j": {
         "prefix": "j",
-        "body": "j\t$target",
-        "description": "WinMIPS64 j instruction",
+        "body": "j       $rt, $addr",
+        "description": "jump to address",
         "scope": "source.mips64"
     },
     "jr": {
         "prefix": "jr",
-        "body": "jr\t$rs",
-        "description": "WinMIPS64 jr instruction",
+        "body": "jr      $rt, $addr",
+        "description": "jump to address in register",
         "scope": "source.mips64"
     },
     "jal": {
         "prefix": "jal",
-        "body": "jal\t$target",
-        "description": "WinMIPS64 jal instruction",
+        "body": "jal     $rt, $addr",
+        "description": "jump and link to address (call subroutine)",
         "scope": "source.mips64"
     },
     "jalr": {
         "prefix": "jalr",
-        "body": "jalr\t$rd, $rs",
-        "description": "WinMIPS64 jalr instruction",
+        "body": "jalr    $rt, $addr",
+        "description": "jump and link to address in register (call subroutine)",
         "scope": "source.mips64"
     },
     "dsll": {
         "prefix": "dsll",
-        "body": "dsll\t$rd, $rt, $sa",
-        "description": "WinMIPS64 dsll instruction",
+        "body": "dsll    $rt, $addr",
+        "description": "shift left logical",
         "scope": "source.mips64"
     },
     "dsrl": {
         "prefix": "dsrl",
-        "body": "dsrl\t$rd, $rt, $sa",
-        "description": "WinMIPS64 dsrl instruction",
+        "body": "dsrl    $rt, $addr",
+        "description": "shift right logical",
         "scope": "source.mips64"
     },
     "dsra": {
         "prefix": "dsra",
-        "body": "dsra\t$rd, $rt, $sa",
-        "description": "WinMIPS64 dsra instruction",
+        "body": "dsra    $rt, $addr",
+        "description": "shift right arithmetic",
         "scope": "source.mips64"
     },
     "dsllv": {
         "prefix": "dsllv",
-        "body": "dsllv\t$rd, $rt, $rs",
-        "description": "WinMIPS64 dsllv instruction",
+        "body": "dsllv   $rt, $addr",
+        "description": "shift left logical by variable amount",
         "scope": "source.mips64"
     },
     "dsrlv": {
         "prefix": "dsrlv",
-        "body": "dsrlv\t$rd, $rt, $rs",
-        "description": "WinMIPS64 dsrlv instruction",
+        "body": "dsrlv   $rt, $addr",
+        "description": "shift right logical by variable amount",
         "scope": "source.mips64"
     },
     "dsrav": {
         "prefix": "dsrav",
-        "body": "dsrav\t$rd, $rt, $rs",
-        "description": "WinMIPS64 dsrav instruction",
+        "body": "dsrav   $rt, $addr",
+        "description": "shift right arithmetic by variable amount",
         "scope": "source.mips64"
     },
     "movz": {
         "prefix": "movz",
-        "body": "movz\t$rd, $rs, $rt",
-        "description": "WinMIPS64 movz instruction",
+        "body": "movz    $rt, $addr",
+        "description": "move if register equals zero",
         "scope": "source.mips64"
     },
     "movn": {
         "prefix": "movn",
-        "body": "movn\t$rd, $rs, $rt",
-        "description": "WinMIPS64 movn instruction",
+        "body": "movn    $rt, $addr",
+        "description": "move if register not equal to zero",
         "scope": "source.mips64"
     },
     "nop": {
         "prefix": "nop",
-        "body": "nop",
-        "description": "WinMIPS64 nop instruction",
+        "body": "nop     $rt, $addr",
+        "description": "no operation",
         "scope": "source.mips64"
     },
     "and": {
         "prefix": "and",
-        "body": "and\t$rd, $rs, $rt",
-        "description": "WinMIPS64 and instruction",
+        "body": "and     $rt, $addr",
+        "description": "logical and",
         "scope": "source.mips64"
     },
     "or": {
         "prefix": "or",
-        "body": "or\t$rd, $rs, $rt",
-        "description": "WinMIPS64 or instruction",
+        "body": "or      $rt, $addr",
+        "description": "logical or",
         "scope": "source.mips64"
     },
     "xor": {
         "prefix": "xor",
-        "body": "xor\t$rd, $rs, $rt",
-        "description": "WinMIPS64 xor instruction",
+        "body": "xor     $rt, $addr",
+        "description": "logical xor",
         "scope": "source.mips64"
     },
     "slt": {
         "prefix": "slt",
-        "body": "slt\t$rd, $rs, $rt",
-        "description": "WinMIPS64 slt instruction",
+        "body": "slt     $rt, $addr",
+        "description": "set if less than",
         "scope": "source.mips64"
     },
     "sltu": {
         "prefix": "sltu",
-        "body": "sltu\t$rd, $rs, $rt",
-        "description": "WinMIPS64 sltu instruction",
+        "body": "sltu    $rt, $addr",
+        "description": "set if less than unsigned",
         "scope": "source.mips64"
     },
     "dadd": {
         "prefix": "dadd",
-        "body": "dadd\t$rd, $rs, $rt",
-        "description": "WinMIPS64 dadd instruction",
+        "body": "dadd    $rt, $addr",
+        "description": "add integers",
         "scope": "source.mips64"
     },
     "daddu": {
         "prefix": "daddu",
-        "body": "daddu\t$rd, $rs, $rt",
-        "description": "WinMIPS64 daddu instruction",
+        "body": "daddu   $rt, $addr",
+        "description": "add integers unsigned",
         "scope": "source.mips64"
     },
     "dsub": {
         "prefix": "dsub",
-        "body": "dsub\t$rd, $rs, $rt",
-        "description": "WinMIPS64 dsub instruction",
+        "body": "dsub    $rt, $addr",
+        "description": "subtract integers",
         "scope": "source.mips64"
     },
     "dsubu": {
         "prefix": "dsubu",
-        "body": "dsubu\t$rd, $rs, $rt",
-        "description": "WinMIPS64 dsubu instruction",
+        "body": "dsubu   $rt, $addr",
+        "description": "subtract integers unsigned",
         "scope": "source.mips64"
     },
     "dmul": {
         "prefix": "dmul",
-        "body": "dmul\t$rd, $rs, $rt",
-        "description": "WinMIPS64 dmul instruction",
+        "body": "dmul    $rt, $addr",
+        "description": "signed integer multiplication",
         "scope": "source.mips64"
     },
     "dmulu": {
         "prefix": "dmulu",
-        "body": "dmulu\t$rd, $rs, $rt",
-        "description": "WinMIPS64 dmulu instruction",
+        "body": "dmulu   $rt, $addr",
+        "description": "unsigned integer multiplication",
         "scope": "source.mips64"
     },
     "ddiv": {
         "prefix": "ddiv",
-        "body": "ddiv\t$rs, $rt",
-        "description": "WinMIPS64 ddiv instruction",
+        "body": "ddiv    $rt, $addr",
+        "description": "signed integer division",
         "scope": "source.mips64"
     },
     "ddivu": {
         "prefix": "ddivu",
-        "body": "ddivu\t$rs, $rt",
-        "description": "WinMIPS64 ddivu instruction",
+        "body": "ddivu   $rt, $addr",
+        "description": "unsigned integer division",
         "scope": "source.mips64"
     },
     "add.d": {
         "prefix": "add.d",
-        "body": "add.d\t$fd, $fs, $ft",
-        "description": "WinMIPS64 add.d instruction",
+        "body": "add.d   $rt, $addr",
+        "description": "add floating",
         "scope": "source.mips64"
     },
     "sub.d": {
         "prefix": "sub.d",
-        "body": "sub.d\t$fd, $fs, $ft",
-        "description": "WinMIPS64 sub.d instruction",
+        "body": "sub.d   $rt, $addr",
+        "description": "subtract floating",
         "scope": "source.mips64"
     },
     "mul.d": {
         "prefix": "mul.d",
-        "body": "mul.d\t$fd, $fs, $ft",
-        "description": "WinMIPS64 mul.d instruction",
+        "body": "mul.d   $rt, $addr",
+        "description": "multiply floating",
         "scope": "source.mips64"
     },
     "div.d": {
         "prefix": "div.d",
-        "body": "div.d\t$fd, $fs, $ft",
-        "description": "WinMIPS64 div.d instruction",
+        "body": "div.d   $rt, $addr",
+        "description": "divide floating",
         "scope": "source.mips64"
     },
     "mov.d": {
         "prefix": "mov.d",
-        "body": "mov.d\t$fd, $fs",
-        "description": "WinMIPS64 mov.d instruction",
+        "body": "mov.d   $rt, $addr",
+        "description": "move floating",
         "scope": "source.mips64"
     },
     "cvt.d.l": {
         "prefix": "cvt.d.l",
-        "body": "cvt.d.l\t$fd, $fs",
-        "description": "WinMIPS64 cvt.d.l instruction",
+        "body": "cvt.d.l $rt, $addr",
+        "description": "convert 64",
         "scope": "source.mips64"
     },
     "cvt.l.d": {
         "prefix": "cvt.l.d",
-        "body": "cvt.l.d\t$fd, $fs",
-        "description": "WinMIPS64 cvt.l.d instruction",
+        "body": "cvt.l.d $rt, $addr",
+        "description": "convert double floating",
         "scope": "source.mips64"
     },
     "c.lt.d": {
         "prefix": "c.lt.d",
-        "body": "c.lt.d\t$fs, $ft",
-        "description": "WinMIPS64 c.lt.d instruction",
+        "body": "c.lt.d  $rt, $addr",
+        "description": "set FP flag if less than",
         "scope": "source.mips64"
     },
     "c.le.d": {
         "prefix": "c.le.d",
-        "body": "c.le.d\t$fs, $ft",
-        "description": "WinMIPS64 c.le.d instruction",
+        "body": "c.le.d  $rt, $addr",
+        "description": "set FP flag if less than or equal to",
         "scope": "source.mips64"
     },
     "c.eq.d": {
         "prefix": "c.eq.d",
-        "body": "c.eq.d\t$fs, $ft",
-        "description": "WinMIPS64 c.eq.d instruction",
+        "body": "c.eq.d  $rt, $addr",
+        "description": "set FP flag if equal to",
         "scope": "source.mips64"
     },
     "bc1f": {
         "prefix": "bc1f",
-        "body": "bc1f\t$off",
-        "description": "WinMIPS64 bc1f instruction",
+        "body": "bc1f    $rt, $addr",
+        "description": "branch to address if FP flag is FALSE",
         "scope": "source.mips64"
     },
     "bc1t": {
         "prefix": "bc1t",
-        "body": "bc1t\t$off",
-        "description": "WinMIPS64 bc1t instruction",
+        "body": "bc1t    $rt, $addr",
+        "description": "branch to address if FP flag is TRUE",
         "scope": "source.mips64"
     },
     "mtc1": {
         "prefix": "mtc1",
-        "body": "mtc1\t$rt, $fs",
-        "description": "WinMIPS64 mtc1 instruction",
+        "body": "mtc1    $rt, $addr",
+        "description": "move data from integer register to floating",
         "scope": "source.mips64"
     },
     "mfc1": {
         "prefix": "mfc1",
-        "body": "mfc1\t$rt, $fs",
-        "description": "WinMIPS64 mfc1 instruction",
+        "body": "mfc1    $rt, $addr",
+        "description": "move data from floating",
         "scope": "source.mips64"
     }
 }
