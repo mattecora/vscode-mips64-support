@@ -5,56 +5,31 @@ const fs = require("fs");
 const mips64_dsp_1 = require("./mips64-dsp");
 class MIPS64CompletionItemProvider {
     constructor(basePath) {
-        this.instructions = {};
-        this.data = {};
-        this.reserved = {};
-        this.instructions = JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-instructions.json").toString());
-        this.data = JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-data.json").toString());
-        this.reserved = JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-reserved.json").toString());
+        this.MIPS64CompletionList = new vscode.CompletionList;
+        // read symbols for instructions from the data folder
+        let parsedInstructions = Object.assign({}, JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-instructions.json").toString()), JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-data.json").toString()), JSON.parse(fs.readFileSync(basePath + "\\data\\mips64-reserved.json").toString()));
+        vscode.window.showInformationMessage(parsedInstructions);
+        // add instructions to symbols
+        for (let key in parsedInstructions) {
+            let item = new vscode.CompletionItem(key);
+            item.kind = vscode.CompletionItemKind.Function;
+            item.detail = parsedInstructions[key]["description"];
+            this.MIPS64CompletionList.items.push(item);
+        }
+        // generate symbols for registers
+        for (let i = 0; i < 32; i++) {
+            let itemr = new vscode.CompletionItem("r" + i);
+            let itemf = new vscode.CompletionItem("f" + i);
+            itemr.kind = vscode.CompletionItemKind.Constant;
+            itemr.detail = "Integer register r" + i;
+            itemf.kind = vscode.CompletionItemKind.Constant;
+            itemf.detail = "Floating-point register r" + i;
+            this.MIPS64CompletionList.items.push(itemr, itemf);
+        }
     }
     provideCompletionItems(document, position, token, context) {
         // get the word
-        let word = document.getText(document.getWordRangeAtPosition(position));
-        let possibleHelp = new vscode.CompletionList;
-        // list instructions
-        for (let key in this.instructions) {
-            if (key.includes(word)) {
-                let item = new vscode.CompletionItem(key);
-                item.kind = vscode.CompletionItemKind.Function;
-                item.insertText = this.instructions[key].body;
-                item.detail = this.instructions[key].description;
-                possibleHelp.items.push(item);
-            }
-        }
-        // list data
-        for (let key in this.data) {
-            if (key.includes(word)) {
-                let item = new vscode.CompletionItem(key);
-                item.kind = vscode.CompletionItemKind.Class;
-                item.insertText = this.data[key].body;
-                item.detail = this.data[key].description;
-                possibleHelp.items.push(item);
-            }
-        }
-        // list reserved
-        for (let key in this.reserved) {
-            if (key.includes(word)) {
-                let item = new vscode.CompletionItem(key);
-                item.kind = vscode.CompletionItemKind.Keyword;
-                item.insertText = this.reserved[key].body;
-                item.detail = this.reserved[key].description;
-                possibleHelp.items.push(item);
-            }
-        }
-        // list registers
-        if (word.startsWith("r") || word.startsWith("f")) {
-            for (let i = 0; i < 32; i++) {
-                let item = new vscode.CompletionItem(word + i);
-                item.kind = vscode.CompletionItemKind.Constant;
-                item.detail = (word.startsWith("r") ? "Integer" : "Floating-point") + " register " + word + i;
-                possibleHelp.items.push(item);
-            }
-        }
+        let possibleHelp = new vscode.CompletionList(this.MIPS64CompletionList.items);
         // list variables
         mips64_dsp_1.getSymbols(document).forEach(element => {
             let item = new vscode.CompletionItem(element.name);
@@ -62,7 +37,7 @@ class MIPS64CompletionItemProvider {
             item.detail = element.detail;
             possibleHelp.items.push(item);
         });
-        return possibleHelp;
+        return this.MIPS64CompletionList;
     }
 }
 exports.MIPS64CompletionItemProvider = MIPS64CompletionItemProvider;

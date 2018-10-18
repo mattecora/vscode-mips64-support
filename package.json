@@ -2,7 +2,7 @@
     "name": "vscode-mips64-support",
     "displayName": "vscode-mips64-support",
     "description": "MIPS64 support for VS Code",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "mattecora",
     "engines": {
         "vscode": "^1.0.0"

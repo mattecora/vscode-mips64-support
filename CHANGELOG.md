@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.3
+Bug fixes in the snippets and in the DocumentSymbolProvider, rewrite of the CompletionItemProvider
+
 ## Version 0.1.2
 Added symbol and item completion providers
 

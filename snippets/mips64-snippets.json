@@ -67,331 +67,331 @@
     },
     "l.d": {
         "prefix": "l.d",
-        "body": "l.d     $rt, $addr",
+        "body": "l.d     $fd, $addr",
         "description": "load 64",
         "scope": "source.mips64"
     },
     "s.d": {
         "prefix": "s.d",
-        "body": "s.d     $rt, $addr",
+        "body": "s.d     $fd, $addr",
         "description": "store 64",
         "scope": "source.mips64"
     },
     "halt": {
         "prefix": "halt",
-        "body": "halt    $rt, $addr",
+        "body": "halt",
         "description": "stop the program",
         "scope": "source.mips64"
     },
     "daddi": {
         "prefix": "daddi",
-        "body": "daddi   $rt, $addr",
+        "body": "daddi   $rt, $rs, $val",
         "description": "add immediate",
         "scope": "source.mips64"
     },
     "daddui": {
         "prefix": "daddui",
-        "body": "daddui  $rt, $addr",
+        "body": "daddui  $rt, $rs, $val",
         "description": "add immediate unsigned",
         "scope": "source.mips64"
     },
     "andi": {
         "prefix": "andi",
-        "body": "andi    $rt, $addr",
+        "body": "andi    $rt, $rs, $val",
         "description": "logical and immediate",
         "scope": "source.mips64"
     },
     "ori": {
         "prefix": "ori",
-        "body": "ori     $rt, $addr",
+        "body": "ori     $rt, $rs, $val",
         "description": "logical or immediate",
         "scope": "source.mips64"
     },
     "xori": {
         "prefix": "xori",
-        "body": "xori    $rt, $addr",
+        "body": "xori    $rt, $rs, $val",
         "description": "exclusive or immediate",
         "scope": "source.mips64"
     },
     "lui": {
         "prefix": "lui",
-        "body": "lui     $rt, $addr",
+        "body": "lui     $rt, $val",
         "description": "load upper half of register immediate",
         "scope": "source.mips64"
     },
     "slti": {
         "prefix": "slti",
-        "body": "slti    $rt, $addr",
+        "body": "slti    $rt, $rs, $val",
         "description": "set if less than or equal immediate",
         "scope": "source.mips64"
     },
     "sltiu": {
         "prefix": "sltiu",
-        "body": "sltiu   $rt, $addr",
+        "body": "sltiu   $rt, $rs, $val",
         "description": "set if less than or equal immediate unsigned",
         "scope": "source.mips64"
     },
     "beq": {
         "prefix": "beq",
-        "body": "beq     $rt, $addr",
+        "body": "beq     $rs, $rt, $off",
         "description": "branch if pair of registers are equal",
         "scope": "source.mips64"
     },
     "bne": {
         "prefix": "bne",
-        "body": "bne     $rt, $addr",
+        "body": "bne     $rs, $rt, $off",
         "description": "branch if pair of registers are not equal",
         "scope": "source.mips64"
     },
     "beqz": {
         "prefix": "beqz",
-        "body": "beqz    $rt, $addr",
+        "body": "beqz    $rs, $off",
         "description": "branch if register is equal to zero",
         "scope": "source.mips64"
     },
     "bnez": {
         "prefix": "bnez",
-        "body": "bnez    $rt, $addr",
+        "body": "bnez    $rs, $off",
         "description": "branch if register is not equal to zero",
         "scope": "source.mips64"
     },
     "j": {
         "prefix": "j",
-        "body": "j       $rt, $addr",
+        "body": "j       $target",
         "description": "jump to address",
         "scope": "source.mips64"
     },
     "jr": {
         "prefix": "jr",
-        "body": "jr      $rt, $addr",
+        "body": "jr      $rs",
         "description": "jump to address in register",
         "scope": "source.mips64"
     },
     "jal": {
         "prefix": "jal",
-        "body": "jal     $rt, $addr",
+        "body": "jal     $target",
         "description": "jump and link to address (call subroutine)",
         "scope": "source.mips64"
     },
     "jalr": {
         "prefix": "jalr",
-        "body": "jalr    $rt, $addr",
+        "body": "jalr    $rd, $rs",
         "description": "jump and link to address in register (call subroutine)",
         "scope": "source.mips64"
     },
     "dsll": {
         "prefix": "dsll",
-        "body": "dsll    $rt, $addr",
+        "body": "dsll    $rd, $rt, $sa",
         "description": "shift left logical",
         "scope": "source.mips64"
     },
     "dsrl": {
         "prefix": "dsrl",
-        "body": "dsrl    $rt, $addr",
+        "body": "dsrl    $rd, $rt, $sa",
         "description": "shift right logical",
         "scope": "source.mips64"
     },
     "dsra": {
         "prefix": "dsra",
-        "body": "dsra    $rt, $addr",
+        "body": "dsra    $rd, $rt, $sa",
         "description": "shift right arithmetic",
         "scope": "source.mips64"
     },
     "dsllv": {
         "prefix": "dsllv",
-        "body": "dsllv   $rt, $addr",
+        "body": "dsllv   $rd, $rt, $rs",
         "description": "shift left logical by variable amount",
         "scope": "source.mips64"
     },
     "dsrlv": {
         "prefix": "dsrlv",
-        "body": "dsrlv   $rt, $addr",
+        "body": "dsrlv   $rd, $rt, $rs",
         "description": "shift right logical by variable amount",
         "scope": "source.mips64"
     },
     "dsrav": {
         "prefix": "dsrav",
-        "body": "dsrav   $rt, $addr",
+        "body": "dsrav   $rd, $rt, $rs",
         "description": "shift right arithmetic by variable amount",
         "scope": "source.mips64"
     },
     "movz": {
         "prefix": "movz",
-        "body": "movz    $rt, $addr",
+        "body": "movz    $rd, $rs, $rt",
         "description": "move if register equals zero",
         "scope": "source.mips64"
     },
     "movn": {
         "prefix": "movn",
-        "body": "movn    $rt, $addr",
+        "body": "movn    $rd, $rs, $rt",
         "description": "move if register not equal to zero",
         "scope": "source.mips64"
     },
     "nop": {
         "prefix": "nop",
-        "body": "nop     $rt, $addr",
+        "body": "nop",
         "description": "no operation",
         "scope": "source.mips64"
     },
     "and": {
         "prefix": "and",
-        "body": "and     $rt, $addr",
+        "body": "and     $rd, $rs, $rt",
         "description": "logical and",
         "scope": "source.mips64"
     },
     "or": {
         "prefix": "or",
-        "body": "or      $rt, $addr",
+        "body": "or      $rd, $rs, $rt",
         "description": "logical or",
         "scope": "source.mips64"
     },
     "xor": {
         "prefix": "xor",
-        "body": "xor     $rt, $addr",
+        "body": "xor     $rd, $rs, $rt",
         "description": "logical xor",
         "scope": "source.mips64"
     },
     "slt": {
         "prefix": "slt",
-        "body": "slt     $rt, $addr",
+        "body": "slt     $rd, $rs, $rt",
         "description": "set if less than",
         "scope": "source.mips64"
     },
     "sltu": {
         "prefix": "sltu",
-        "body": "sltu    $rt, $addr",
+        "body": "sltu    $rd, $rs, $rt",
         "description": "set if less than unsigned",
         "scope": "source.mips64"
     },
     "dadd": {
         "prefix": "dadd",
-        "body": "dadd    $rt, $addr",
+        "body": "dadd    $rd, $rs, $rt",
         "description": "add integers",
         "scope": "source.mips64"
     },
     "daddu": {
         "prefix": "daddu",
-        "body": "daddu   $rt, $addr",
+        "body": "daddu   $rd, $rs, $rt",
         "description": "add integers unsigned",
         "scope": "source.mips64"
     },
     "dsub": {
         "prefix": "dsub",
-        "body": "dsub    $rt, $addr",
+        "body": "dsub    $rd, $rs, $rt",
         "description": "subtract integers",
         "scope": "source.mips64"
     },
     "dsubu": {
         "prefix": "dsubu",
-        "body": "dsubu   $rt, $addr",
+        "body": "dsubu   $rd, $rs, $rt",
         "description": "subtract integers unsigned",
         "scope": "source.mips64"
     },
     "dmul": {
         "prefix": "dmul",
-        "body": "dmul    $rt, $addr",
+        "body": "dmul    $rd, $rs, $rt",
         "description": "signed integer multiplication",
         "scope": "source.mips64"
     },
     "dmulu": {
         "prefix": "dmulu",
-        "body": "dmulu   $rt, $addr",
+        "body": "dmulu   $rd, $rs, $rt",
         "description": "unsigned integer multiplication",
         "scope": "source.mips64"
     },
     "ddiv": {
         "prefix": "ddiv",
-        "body": "ddiv    $rt, $addr",
+        "body": "ddiv    $rd, $rs, $rt",
         "description": "signed integer division",
         "scope": "source.mips64"
     },
     "ddivu": {
         "prefix": "ddivu",
-        "body": "ddivu   $rt, $addr",
+        "body": "ddivu   $rd, $rs, $rt",
         "description": "unsigned integer division",
         "scope": "source.mips64"
     },
     "add.d": {
         "prefix": "add.d",
-        "body": "add.d   $rt, $addr",
+        "body": "add.d   $fd, $fs, $ft",
         "description": "add floating",
         "scope": "source.mips64"
     },
     "sub.d": {
         "prefix": "sub.d",
-        "body": "sub.d   $rt, $addr",
+        "body": "sub.d   $fd, $fs, $ft",
         "description": "subtract floating",
         "scope": "source.mips64"
     },
     "mul.d": {
         "prefix": "mul.d",
-        "body": "mul.d   $rt, $addr",
+        "body": "mul.d   $fd, $fs, $ft",
         "description": "multiply floating",
         "scope": "source.mips64"
     },
     "div.d": {
         "prefix": "div.d",
-        "body": "div.d   $rt, $addr",
+        "body": "div.d   $fd, $fs, $ft",
         "description": "divide floating",
         "scope": "source.mips64"
     },
     "mov.d": {
         "prefix": "mov.d",
-        "body": "mov.d   $rt, $addr",
+        "body": "mov.d   $fd, $fs",
         "description": "move floating",
         "scope": "source.mips64"
     },
     "cvt.d.l": {
         "prefix": "cvt.d.l",
-        "body": "cvt.d.l $rt, $addr",
+        "body": "cvt.d.l $fd, $fs",
         "description": "convert 64",
         "scope": "source.mips64"
     },
     "cvt.l.d": {
         "prefix": "cvt.l.d",
-        "body": "cvt.l.d $rt, $addr",
+        "body": "cvt.l.d $fd, $fs",
         "description": "convert double floating",
         "scope": "source.mips64"
     },
     "c.lt.d": {
         "prefix": "c.lt.d",
-        "body": "c.lt.d  $rt, $addr",
+        "body": "c.lt.d  $fs, $ft",
         "description": "set FP flag if less than",
         "scope": "source.mips64"
     },
     "c.le.d": {
         "prefix": "c.le.d",
-        "body": "c.le.d  $rt, $addr",
+        "body": "c.le.d  $fs, $ft",
         "description": "set FP flag if less than or equal to",
         "scope": "source.mips64"
     },
     "c.eq.d": {
         "prefix": "c.eq.d",
-        "body": "c.eq.d  $rt, $addr",
+        "body": "c.eq.d  $fs, $ft",
         "description": "set FP flag if equal to",
         "scope": "source.mips64"
     },
     "bc1f": {
         "prefix": "bc1f",
-        "body": "bc1f    $rt, $addr",
+        "body": "bc1f    $off",
         "description": "branch to address if FP flag is FALSE",
         "scope": "source.mips64"
     },
     "bc1t": {
         "prefix": "bc1t",
-        "body": "bc1t    $rt, $addr",
+        "body": "bc1t    $off",
         "description": "branch to address if FP flag is TRUE",
         "scope": "source.mips64"
     },
     "mtc1": {
         "prefix": "mtc1",
-        "body": "mtc1    $rt, $addr",
+        "body": "mtc1    $rt, $fs",
         "description": "move data from integer register to floating",
         "scope": "source.mips64"
     },
     "mfc1": {
         "prefix": "mfc1",
-        "body": "mfc1    $rt, $addr",
+        "body": "mfc1   $rt, $fs",
         "description": "move data from floating",
         "scope": "source.mips64"
     }
