@@ -32,3 +32,5 @@ The only thing you have to setup is the `winmips64.path` setting to match your f
 
 * MIPS64: Build with asm
 * MIPS64: Run with winmips64
+
+A command to cleanup the WinMIPS64 configuration files is also provided (MIPS64: Clean winmips64 config).

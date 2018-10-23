@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.4
+Added clean command for winmips64
+
 ## Version 0.1.3
 Bug fixes in the snippets and in the DocumentSymbolProvider, rewrite of the CompletionItemProvider
 

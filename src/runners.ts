@@ -53,3 +53,17 @@ export function winmips64Runner(winmips64Path: string, filePath: string, outputC
         child_process.exec("winmips64.exe");
     });
 }
+
+export function winmips64Clean(winmips64Path: string) {
+    if (fs.existsSync(winmips64Path + "\\winmips64.las")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.las");
+    }
+    if (fs.existsSync(winmips64Path + "\\winmips64.ini")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.ini");
+    }
+    if (fs.existsSync(winmips64Path + "\\winmips64.pth")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.pth");
+    }
+
+    vscode.window.showInformationMessage("Cleaning completed");
+}

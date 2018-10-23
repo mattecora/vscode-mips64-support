@@ -45,4 +45,17 @@ function winmips64Runner(winmips64Path, filePath, outputChannel) {
     });
 }
 exports.winmips64Runner = winmips64Runner;
+function winmips64Clean(winmips64Path) {
+    if (fs.existsSync(winmips64Path + "\\winmips64.las")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.las");
+    }
+    if (fs.existsSync(winmips64Path + "\\winmips64.ini")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.ini");
+    }
+    if (fs.existsSync(winmips64Path + "\\winmips64.pth")) {
+        fs.unlinkSync(winmips64Path + "\\winmips64.pth");
+    }
+    vscode.window.showInformationMessage("Cleaning completed");
+}
+exports.winmips64Clean = winmips64Clean;
 //# sourceMappingURL=runners.js.map

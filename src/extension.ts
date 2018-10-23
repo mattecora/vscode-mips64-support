@@ -1,12 +1,13 @@
 'use strict';
 
 import * as vscode from 'vscode';
-import { asmRunner, winmips64Runner } from './runners';
+import { asmRunner, winmips64Runner, winmips64Clean } from './runners';
 import { MIPS64CompletionItemProvider } from './mips64-cip';
 import { MIPS64DocumentSymbolProvider } from './mips64-dsp';
 
 let asmCommand: vscode.Disposable | undefined = undefined;
 let winmips64Command: vscode.Disposable | undefined = undefined;
+let winmips64CleanCommand: vscode.Disposable | undefined = undefined;
 
 let outputChannel: vscode.OutputChannel | undefined = undefined;
 
@@ -60,6 +61,18 @@ export function activate(context: vscode.ExtensionContext) {
         }
     );
 
+    winmips64CleanCommand = vscode.commands.registerCommand(
+        "mips64.winmips64Clean",
+        () => {
+            // check the value of winmips64.path
+            let winmips64Path = vscode.workspace.getConfiguration().get<string>("winmips64.path");
+
+            if (winmips64Path) {
+                winmips64Clean(winmips64Path);
+            }
+        }
+    );
+
     let dsp = new MIPS64DocumentSymbolProvider();
     let cip = new MIPS64CompletionItemProvider(context.extensionPath);
 
@@ -73,6 +86,9 @@ export function deactivate() {
     }
     if (winmips64Command) {
         winmips64Command.dispose();
+    }
+    if (winmips64CleanCommand) {
+        winmips64CleanCommand.dispose();
     }
     if (outputChannel) {
         outputChannel.dispose();

@@ -6,6 +6,7 @@ const mips64_cip_1 = require("./mips64-cip");
 const mips64_dsp_1 = require("./mips64-dsp");
 let asmCommand = undefined;
 let winmips64Command = undefined;
+let winmips64CleanCommand = undefined;
 let outputChannel = undefined;
 const MIPS64_FILE = { language: 'mips64', scheme: 'file' };
 function activate(context) {
@@ -45,6 +46,13 @@ function activate(context) {
             vscode.window.showErrorMessage("Cannot run command: winmips64.path is not specified in settings");
         }
     });
+    winmips64CleanCommand = vscode.commands.registerCommand("mips64.winmips64Clean", () => {
+        // check the value of winmips64.path
+        let winmips64Path = vscode.workspace.getConfiguration().get("winmips64.path");
+        if (winmips64Path) {
+            runners_1.winmips64Clean(winmips64Path);
+        }
+    });
     let dsp = new mips64_dsp_1.MIPS64DocumentSymbolProvider();
     let cip = new mips64_cip_1.MIPS64CompletionItemProvider(context.extensionPath);
     vscode.languages.registerDocumentSymbolProvider(MIPS64_FILE, dsp);
@@ -57,6 +65,9 @@ function deactivate() {
     }
     if (winmips64Command) {
         winmips64Command.dispose();
+    }
+    if (winmips64CleanCommand) {
+        winmips64CleanCommand.dispose();
     }
     if (outputChannel) {
         outputChannel.dispose();
