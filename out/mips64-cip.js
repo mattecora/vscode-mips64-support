@@ -29,7 +29,11 @@ class MIPS64CompletionItemProvider {
     }
     provideCompletionItems(document, position, token, context) {
         // get the word
-        let possibleHelp = new vscode.CompletionList(this.MIPS64CompletionList.items);
+        let possibleHelp = new vscode.CompletionList();
+        // list symbols
+        this.MIPS64CompletionList.items.forEach(element => {
+            possibleHelp.items.push(element);
+        });
         // list variables
         mips64_dsp_1.getSymbols(document).forEach(element => {
             let item = new vscode.CompletionItem(element.name);
@@ -37,7 +41,7 @@ class MIPS64CompletionItemProvider {
             item.detail = element.detail;
             possibleHelp.items.push(item);
         });
-        return this.MIPS64CompletionList;
+        return possibleHelp;
     }
 }
 exports.MIPS64CompletionItemProvider = MIPS64CompletionItemProvider;

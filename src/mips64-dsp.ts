@@ -26,7 +26,7 @@ export function getSymbols(document: vscode.TextDocument): vscode.DocumentSymbol
         if (line.trim() === ".data") {
             checkVariables = true;
         } else if (line.trim() === ".text") {
-            checkVariables = false;
+            break;
         }
     }
 

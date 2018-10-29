@@ -19,7 +19,7 @@ function getSymbols(document) {
             checkVariables = true;
         }
         else if (line.trim() === ".text") {
-            checkVariables = false;
+            break;
         }
     }
     return retArray;

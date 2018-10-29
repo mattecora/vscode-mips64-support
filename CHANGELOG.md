@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.5
+Bug fixes in the CompletionItemProvider
+
 ## Version 0.1.4
 Added clean command for winmips64
 

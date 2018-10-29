@@ -47,7 +47,12 @@ export class MIPS64CompletionItemProvider implements vscode.CompletionItemProvid
         document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): 
         vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList> {
             // get the word
-            let possibleHelp = new vscode.CompletionList(this.MIPS64CompletionList.items);
+            let possibleHelp = new vscode.CompletionList();
+
+            // list symbols
+            this.MIPS64CompletionList.items.forEach(element => {
+                possibleHelp.items.push(element);
+            });
 
             // list variables
             getSymbols(document).forEach(element => {
@@ -57,7 +62,7 @@ export class MIPS64CompletionItemProvider implements vscode.CompletionItemProvid
                 possibleHelp.items.push(item);
             });
 
-            return this.MIPS64CompletionList;
+            return possibleHelp;
     }
 
 }
