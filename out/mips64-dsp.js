@@ -11,8 +11,7 @@ function getSymbols(document) {
         // search variables in the data section, or labels in the text section
         if (line.includes(":") && !line.split(":")[0].includes(";") && !line.split(":")[0].includes(";")) {
             let variableName = line.split(":")[0].trim();
-            let variableType = line.split(":")[1].trim().split(" ")[0].trim();
-            let item = new vscode.DocumentSymbol(variableName, checkVariables ? variableType : "", checkVariables ? vscode.SymbolKind.Variable : vscode.SymbolKind.Function, new vscode.Range(new vscode.Position(i, line.indexOf(variableName)), new vscode.Position(i, line.indexOf(variableName) + variableName.length)), new vscode.Range(new vscode.Position(i, line.indexOf(variableName)), new vscode.Position(i, line.indexOf(variableName) + variableName.length)));
+            let item = new vscode.SymbolInformation(variableName, checkVariables ? vscode.SymbolKind.Variable : vscode.SymbolKind.Function, new vscode.Range(new vscode.Position(i, line.indexOf(variableName)), new vscode.Position(i, line.indexOf(variableName) + variableName.length)));
             retArray.push(item);
         }
         if (line.trim() === ".data") {

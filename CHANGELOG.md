@@ -1,5 +1,8 @@
 # Changelog (vscode-mips64-support)
 
+## Version 0.1.6
+Security patch
+
 ## Version 0.1.5
 Bug fixes in the CompletionItemProvider
 

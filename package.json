@@ -2,7 +2,7 @@
     "name": "vscode-mips64-support",
     "displayName": "vscode-mips64-support",
     "description": "MIPS64 support for VS Code",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "publisher": "mattecora",
     "engines": {
         "vscode": "^1.0.0"
@@ -15,17 +15,25 @@
         "languages": [
             {
                 "id": "mips64",
-                "aliases": ["MIPS64 Assembler", "mips64"],
-                "extensions": [".s",".asm"],
+                "aliases": [
+                    "MIPS64 Assembler",
+                    "mips64"
+                ],
+                "extensions": [
+                    ".s",
+                    ".asm"
+                ],
                 "configuration": "./language-configuration.json"
             }
-        ], "grammars": [
+        ],
+        "grammars": [
             {
                 "language": "mips64",
                 "scopeName": "source.mips64",
                 "path": "./syntaxes/mips64.tmLanguage"
             }
-        ], "snippets": [
+        ],
+        "snippets": [
             {
                 "language": "mips64",
                 "path": "./snippets/mips64-snippets.json"
@@ -65,7 +73,7 @@
     },
     "devDependencies": {
         "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
+        "vscode": "^1.1.26",
         "tslint": "^5.8.0",
         "@types/node": "^8.10.25",
         "@types/mocha": "^2.2.42"

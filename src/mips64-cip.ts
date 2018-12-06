@@ -33,10 +33,10 @@ export class MIPS64CompletionItemProvider implements vscode.CompletionItemProvid
             let itemr = new vscode.CompletionItem("r" + i);
             let itemf = new vscode.CompletionItem("f" + i);
 
-            itemr.kind = vscode.CompletionItemKind.Constant;
+            itemr.kind = vscode.CompletionItemKind.Reference;
             itemr.detail = "Integer register r" + i;
 
-            itemf.kind = vscode.CompletionItemKind.Constant;
+            itemf.kind = vscode.CompletionItemKind.Reference;
             itemf.detail = "Floating-point register r" + i;
 
             this.MIPS64CompletionList.items.push(itemr, itemf);
@@ -44,8 +44,8 @@ export class MIPS64CompletionItemProvider implements vscode.CompletionItemProvid
     }
 
     public provideCompletionItems(
-        document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): 
-        vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList> {
+        document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken): 
+        vscode.CompletionItem[] | vscode.CompletionList | Thenable<vscode.CompletionItem[]> | Thenable<vscode.CompletionList> {
             // get the word
             let possibleHelp = new vscode.CompletionList();
 
@@ -58,7 +58,6 @@ export class MIPS64CompletionItemProvider implements vscode.CompletionItemProvid
             getSymbols(document).forEach(element => {
                 let item = new vscode.CompletionItem(element.name);
                 item.kind = vscode.CompletionItemKind.Variable;
-                item.detail = element.detail;
                 possibleHelp.items.push(item);
             });
 

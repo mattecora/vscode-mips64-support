@@ -1,9 +1,9 @@
 import * as vscode from 'vscode';
 
-export function getSymbols(document: vscode.TextDocument): vscode.DocumentSymbol[] {
+export function getSymbols(document: vscode.TextDocument): vscode.SymbolInformation[] {
     let lineNumber: number = document.lineCount;
     let checkVariables: boolean = false;
-    let retArray: vscode.DocumentSymbol[] = [];
+    let retArray: vscode.SymbolInformation[] = [];
 
     // search inside the data section
     for (let i = 0; i < lineNumber; i++) {
@@ -12,13 +12,11 @@ export function getSymbols(document: vscode.TextDocument): vscode.DocumentSymbol
         // search variables in the data section, or labels in the text section
         if (line.includes(":") && !line.split(":")[0].includes(";") && !line.split(":")[0].includes(";")) {
             let variableName = line.split(":")[0].trim();
-            let variableType = line.split(":")[1].trim().split(" ")[0].trim();
 
-            let item = new vscode.DocumentSymbol(variableName,
-                checkVariables ? variableType : "",
+            let item = new vscode.SymbolInformation(variableName,
                 checkVariables ? vscode.SymbolKind.Variable : vscode.SymbolKind.Function, 
                 new vscode.Range(new vscode.Position(i, line.indexOf(variableName)), new vscode.Position(i, line.indexOf(variableName) + variableName.length)),
-                new vscode.Range(new vscode.Position(i, line.indexOf(variableName)), new vscode.Position(i, line.indexOf(variableName) + variableName.length)));
+            );
             
             retArray.push(item);
         }
@@ -37,7 +35,7 @@ export class MIPS64DocumentSymbolProvider implements vscode.DocumentSymbolProvid
     
     public provideDocumentSymbols(
         document: vscode.TextDocument, token: vscode.CancellationToken): 
-        vscode.DocumentSymbol[] {
+        vscode.SymbolInformation[] {
             return getSymbols(document);
     }
 

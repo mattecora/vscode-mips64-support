@@ -20,14 +20,14 @@ class MIPS64CompletionItemProvider {
         for (let i = 0; i < 32; i++) {
             let itemr = new vscode.CompletionItem("r" + i);
             let itemf = new vscode.CompletionItem("f" + i);
-            itemr.kind = vscode.CompletionItemKind.Constant;
+            itemr.kind = vscode.CompletionItemKind.Reference;
             itemr.detail = "Integer register r" + i;
-            itemf.kind = vscode.CompletionItemKind.Constant;
+            itemf.kind = vscode.CompletionItemKind.Reference;
             itemf.detail = "Floating-point register r" + i;
             this.MIPS64CompletionList.items.push(itemr, itemf);
         }
     }
-    provideCompletionItems(document, position, token, context) {
+    provideCompletionItems(document, position, token) {
         // get the word
         let possibleHelp = new vscode.CompletionList();
         // list symbols
@@ -38,7 +38,6 @@ class MIPS64CompletionItemProvider {
         mips64_dsp_1.getSymbols(document).forEach(element => {
             let item = new vscode.CompletionItem(element.name);
             item.kind = vscode.CompletionItemKind.Variable;
-            item.detail = element.detail;
             possibleHelp.items.push(item);
         });
         return possibleHelp;
